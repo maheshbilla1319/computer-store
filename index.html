@@ -1,0 +1,2682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TechNova - Computer Store</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+
+<body>
+     <!-- =====================================================
+     HEADER / NAVBAR
+====================================================== -->
+<header class="site-header" id="header">
+
+    <div class="container header-container">
+
+        <!-- ================= LOGO ================= -->
+        <a href="#home" class="site-logo" aria-label="TechNova Home">
+
+            <span class="logo-icon">
+                <i class="fa-solid fa-laptop"></i>
+            </span>
+
+            <span class="logo-text">
+                Tech<span>Nova</span>
+            </span>
+
+        </a>
+
+
+        <!-- ================= NAVIGATION ================= -->
+        <nav class="navbar" id="navbar">
+ <a href="index.html" class="nav-link active">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+            </a>
+
+            <a href="about.html" class="nav-link">
+                <i class="fa-solid fa-box"></i>
+                <span>About</span>
+            </a>
+
+            <a href="services.html" class="nav-link">
+                <i class="fa-solid fa-layer-group"></i>
+                <span>Services</span>
+            </a>
+
+            <a href="blog.html" class="nav-link">
+                <i class="fa-solid fa-circle-info"></i>
+                <span>Blog</span>
+            </a>
+
+            <a href="contact.html" class="nav-link">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <span>Contact</span>
+            </a>
+
+            <!-- Mobile Login -->
+            <a href="#login" class="mobile-login-btn">
+                <i class="fa-solid fa-right-to-bracket"></i>
+                <span>Login</span>
+            </a>
+
+        </nav>
+
+
+        <!-- ================= RIGHT ACTIONS ================= -->
+        <div class="header-actions">
+
+            <!-- Search -->
+            <button
+                class="icon-btn"
+                id="searchBtn"
+                type="button"
+                aria-label="Search"
+            >
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+
+            <!-- Cart -->
+            <button
+                class="icon-btn cart-btn"
+                id="cartBtn"
+                type="button"
+                aria-label="Shopping Cart"
+            >
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                <span class="cart-count" id="cartCount">
+                    0
+                </span>
+            </button>
+
+
+            <!-- Desktop Login -->
+            <a href="#login" class="login-btn">
+                <i class="fa-solid fa-user"></i>
+                <span>Login</span>
+            </a>
+
+
+            <!-- Mobile Menu -->
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="navbar"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+<!-- =====================================================
+     2. HERO SECTION
+===================================================== -->
+
+<main>
+
+    <section class="hero-section" id="home">
+
+        <!-- Background Video -->
+        <div class="hero-video">
+<div class="hero-video">
+    < video
+        autoplay
+        muted
+        loop
+        playsinline
+        poster="https://tse1.mm.bing.net/th/id/OIP.yaxfsfMeCPqMQx-s2FHGRQHaFf?r=0&pid=Api&P=0&h=180"
+    >
+        <source
+            src="./assets/computer-store.mp4"
+            type="video/mp4"
+        >
+
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Dark Overlay -->
+    <div class="hero-video-overlay"></div>
+
+    <!-- Moving Glow -->
+    <div class="hero-video-glow"></div>
+</div>
+
+        </div>
+
+        <!-- Dark Overlay -->
+        <div class="hero-overlay"></div>
+
+
+        <div class="container hero-container">
+
+            <!-- HERO CONTENT -->
+            <div class="hero-content">
+
+                <span class="hero-tag">
+                    <i class="fa-solid fa-bolt"></i>
+                    NEXT GENERATION TECHNOLOGY
+                </span>
+
+                <h1>
+                    Upgrade Your
+                    <span>Digital World</span>
+                </h1>
+
+                <p>
+                    Discover powerful laptops, desktops, gaming PCs,
+                    accessories and the latest technology at unbeatable prices.
+                </p>
+
+
+                <div class="hero-buttons">
+
+                    <a href="#products" class="btn btn-primary">
+                        Shop Now
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                    <a href="#categories" class="btn btn-outline">
+                        Explore Products
+                        <i class="fa-solid fa-laptop"></i>
+                    </a>
+
+                </div>
+
+
+                <!-- HERO FEATURES -->
+                <div class="hero-features">
+
+                    <div class="hero-feature">
+
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-truck-fast"></i>
+                        </div>
+
+                        <div>
+                            <strong>Fast Delivery</strong>
+                            <small>Across India</small>
+                        </div>
+
+                    </div>
+
+
+                    <div class="hero-feature">
+
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+
+                        <div>
+                            <strong>Secure Shopping</strong>
+                            <small>100% Protected</small>
+                        </div>
+
+                    </div>
+
+
+                    <div class="hero-feature">
+
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-headset"></i>
+                        </div>
+
+                        <div>
+                            <strong>Expert Support</strong>
+                            <small>24/7 Assistance</small>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- HERO PRODUCT -->
+            <div class="hero-image">
+
+                <div class="hero-glow"></div>
+
+                <div class="product-circle"></div>
+
+                <img
+                    src="https://png.pngtree.com/thumb_back/fh260/background/20230704/pngtree-office-essentials-technology-and-gadgets-illustration-featuring-laptop-printer-camera-tablet-image_3748458.jpg"
+                    alt="Premium Laptop"
+                >
+
+
+                <!-- Floating Card 1 -->
+                <div class="floating-card card-one">
+
+                    <div class="floating-icon">
+                        <i class="fa-solid fa-microchip"></i>
+                    </div>
+
+                    <div>
+                        <strong>Latest CPU</strong>
+                        <span>High Performance</span>
+                    </div>
+
+                </div>
+
+
+                <!-- Floating Card 2 -->
+                <div class="floating-card card-two">
+
+                    <div class="floating-icon">
+                        <i class="fa-solid fa-gamepad"></i>
+                    </div>
+
+                    <div>
+                        <strong>Gaming Ready</strong>
+                        <span>RTX Graphics</span>
+                    </div>
+
+                </div>
+
+
+                <!-- Floating Card 3 -->
+                <div class="floating-card card-three">
+
+                    <div class="floating-icon">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+
+                    <div>
+                        <strong>Fast & Powerful</strong>
+                        <span>Next Generation</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Scroll Indicator -->
+        <div class="hero-scroll">
+
+            <span>SCROLL TO EXPLORE</span>
+
+            <i class="fa-solid fa-arrow-down"></i>
+
+        </div>
+
+    </section>
+
+
+
+<!-- =====================================================
+     3. CATEGORIES SECTION
+===================================================== -->
+
+<section class="categories-section" id="categories">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-tag">
+                SHOP BY CATEGORY
+            </span>
+
+            <h2>
+                Find What You
+                <span>Need</span>
+            </h2>
+
+            <p>
+                Explore our wide range of technology products.
+            </p>
+
+        </div>
+
+
+        <div class="category-grid">
+
+
+            <!-- ================= LAPTOP ================= -->
+
+            <div class="category-card category-laptop">
+
+                <div class="category-bg-circle"></div>
+
+                <div class="category-icon">
+                    <i class="fa-solid fa-laptop"></i>
+                </div>
+
+                <div class="category-image">
+
+                    <img
+                        src="https://tse1.mm.bing.net/th/id/OIP.2ZPNGHiMmSWv-rMEvV4AvgHaE7?r=0&pid=Api&P=0&h=180"
+                        alt="Laptops"
+                    >
+
+                </div>
+
+                <div class="category-content">
+
+                    <span class="category-number">01</span>
+
+                    <h3>Laptops</h3>
+
+                    <p>120+ Products</p>
+
+                    <a href="#products">
+                        Explore
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= DESKTOP ================= -->
+
+            <div class="category-card category-desktop">
+
+                <div class="category-bg-circle"></div>
+
+                <div class="category-icon">
+                    <i class="fa-solid fa-desktop"></i>
+                </div>
+
+                <div class="category-image">
+
+                    <img
+                        src="./assets/category-desktop.webp"
+                        alt="Desktops"
+                    >
+
+                </div>
+
+                <div class="category-content">
+
+                    <span class="category-number">02</span>
+
+                    <h3>Desktops</h3>
+
+                    <p>80+ Products</p>
+
+                    <a href="#products">
+                        Explore
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= GAMING ================= -->
+
+            <div class="category-card category-gaming">
+
+                <div class="category-bg-circle"></div>
+
+                <div class="category-icon">
+                    <i class="fa-solid fa-gamepad"></i>
+                </div>
+
+                <div class="category-image">
+
+                    <img
+                        src="./assets/category-gaming.webp"
+                        alt="Gaming"
+                    >
+
+                </div>
+
+                <div class="category-content">
+
+                    <span class="category-number">03</span>
+
+                    <h3>Gaming</h3>
+
+                    <p>150+ Products</p>
+
+                    <a href="#products">
+                        Explore
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= ACCESSORIES ================= -->
+
+            <div class="category-card category-accessories">
+
+                <div class="category-bg-circle"></div>
+
+                <div class="category-icon">
+                    <i class="fa-solid fa-keyboard"></i>
+                </div>
+
+                <div class="category-image">
+
+                    <img
+                        src="./assets/category-accessories.webp"
+                        alt="Accessories"
+                    >
+
+                </div>
+
+                <div class="category-content">
+
+                    <span class="category-number">04</span>
+
+                    <h3>Accessories</h3>
+
+                    <p>250+ Products</p>
+
+                    <a href="#products">
+                        Explore
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     PRODUCTS SECTION
+========================================================= -->
+
+<section class="products-section" id="products">
+
+    <!-- Background Effects -->
+    <div class="products-bg-glow glow-one"></div>
+    <div class="products-bg-glow glow-two"></div>
+    <div class="products-grid-bg"></div>
+
+    <div class="container">
+
+        <!-- Section Heading -->
+        <div class="section-heading products-heading">
+
+            <span class="section-tag">
+                <i class="fa-solid fa-bolt"></i>
+                FEATURED PRODUCTS
+            </span>
+
+            <h2>
+                Best Selling
+                <span>Products</span>
+            </h2>
+
+            <p>
+                Hand-picked technology products designed for
+                performance, style and everyday productivity.
+            </p>
+
+        </div>
+
+
+        <!-- =================================================
+             PRODUCT SLIDER
+        ================================================== -->
+
+        <div class="product-slider">
+
+            <div class="product-track" id="productTrack">
+
+
+                <!-- PRODUCT 1 -->
+                <article class="product-card">
+
+                    <div class="product-image">
+
+                        <span class="product-badge">
+                            NEW
+                        </span>
+
+                        <div class="image-glow"></div>
+
+                        <img
+                            src="./assets/laptop-1.webp"
+                            alt="TechNova Pro 15"
+                        >
+
+                        <button
+                            class="wishlist-btn"
+                            type="button"
+                            aria-label="Add to wishlist"
+                        >
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <span class="product-category">
+                            <i class="fa-solid fa-laptop"></i>
+                            LAPTOP
+                        </span>
+
+                        <h3>TechNova Pro 15</h3>
+
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(120)</span>
+                        </div>
+
+                        <div class="product-bottom">
+
+                            <div class="price">
+                                <small>Starting from</small>
+                                <strong>₹74,999</strong>
+                            </div>
+<button
+    class="add-cart"
+    type="button"
+    aria-label="Add product to cart"
+    title="Add to Cart"
+>
+    <i class="fa-solid fa-cart-plus"></i>
+</button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCT 2 -->
+                <article class="product-card">
+
+                    <div class="product-image">
+
+                        <span class="product-badge sale">
+                            SALE
+                        </span>
+
+                        <div class="image-glow"></div>
+
+                        <img
+                            src="./assets/laptop-2.webp"
+                            alt="Nova Gaming X15"
+                        >
+
+                        <button
+                            class="wishlist-btn"
+                            type="button"
+                            aria-label="Add to wishlist"
+                        >
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <span class="product-category">
+                            <i class="fa-solid fa-gamepad"></i>
+                            GAMING
+                        </span>
+
+                        <h3>Nova Gaming X15</h3>
+
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(98)</span>
+                        </div>
+
+                        <div class="product-bottom">
+
+                            <div class="price">
+                                <small>Starting from</small>
+                                <strong>₹89,999</strong>
+                            </div>
+<button
+    class="add-cart"
+    type="button"
+    aria-label="Add product to cart"
+    title="Add to Cart"
+>
+    <i class="fa-solid fa-cart-plus"></i>
+</button>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCT 3 -->
+                <article class="product-card">
+
+                    <div class="product-image">
+
+                        <span class="product-badge">
+                            PRO
+                        </span>
+
+                        <div class="image-glow"></div>
+
+                        <img
+                            src="./assets/desktop.webp"
+                            alt="Nova WorkStation Pro"
+                        >
+
+                        <button
+                            class="wishlist-btn"
+                            type="button"
+                            aria-label="Add to wishlist"
+                        >
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <span class="product-category">
+                            <i class="fa-solid fa-desktop"></i>
+                            DESKTOP
+                        </span>
+
+                        <h3>Nova WorkStation Pro</h3>
+
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span>(75)</span>
+                        </div>
+
+                        <div class="product-bottom">
+
+                            <div class="price">
+                                <small>Starting from</small>
+                                <strong>₹64,999</strong>
+                            </div>
+<button
+    class="add-cart"
+    type="button"
+    aria-label="Add product to cart"
+    title="Add to Cart"
+>
+    <i class="fa-solid fa-cart-plus"></i>
+</button>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCT 4 -->
+                <article class="product-card">
+
+                    <div class="product-image">
+
+                        <span class="product-badge">
+                            RGB
+                        </span>
+
+                        <div class="image-glow"></div>
+
+                        <img
+                            src="./assets/keyboard.webp"
+                            alt="RGB Mechanical Keyboard"
+                        >
+
+                        <button
+                            class="wishlist-btn"
+                            type="button"
+                            aria-label="Add to wishlist"
+                        >
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <span class="product-category">
+                            <i class="fa-solid fa-keyboard"></i>
+                            ACCESSORIES
+                        </span>
+
+                        <h3>RGB Mechanical Keyboard</h3>
+
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(210)</span>
+                        </div>
+
+                        <div class="product-bottom">
+
+                            <div class="price">
+                                <small>Starting from</small>
+                                <strong>₹4,999</strong>
+                            </div>
+<button
+    class="add-cart"
+    type="button"
+    aria-label="Add product to cart"
+    title="Add to Cart"
+>
+    <i class="fa-solid fa-cart-plus"></i>
+</button>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCT 5 -->
+                <article class="product-card">
+
+                    <div class="product-image">
+
+                        <span class="product-badge hot">
+                            HOT
+                        </span>
+
+                        <div class="image-glow"></div>
+
+                        <img
+                            src="./assets/gaming-pc.webp"
+                            alt="Nova RTX Gaming PC"
+                        >
+
+                        <button
+                            class="wishlist-btn"
+                            type="button"
+                            aria-label="Add to wishlist"
+                        >
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <span class="product-category">
+                            <i class="fa-solid fa-computer"></i>
+                            GAMING PC
+                        </span>
+
+                        <h3>Nova RTX Gaming PC</h3>
+
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(156)</span>
+                        </div>
+
+                        <div class="product-bottom">
+
+                            <div class="price">
+                                <small>Starting from</small>
+                                <strong>₹1,29,999</strong>
+                            </div>
+<button
+    class="add-cart"
+    type="button"
+    aria-label="Add product to cart"
+    title="Add to Cart"
+>
+    <i class="fa-solid fa-cart-plus"></i>
+</button>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCT 6 -->
+                <article class="product-card">
+
+                    <div class="product-image">
+
+                        <span class="product-badge">
+                            PRO
+                        </span>
+
+                        <div class="image-glow"></div>
+
+                        <img
+                            src="./assets/mouse.webp"
+                            alt="Pro Gaming Mouse"
+                        >
+
+                        <button
+                            class="wishlist-btn"
+                            type="button"
+                            aria-label="Add to wishlist"
+                        >
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <span class="product-category">
+                            <i class="fa-solid fa-computer-mouse"></i>
+                            ACCESSORIES
+                        </span>
+
+                        <h3>Pro Gaming Mouse</h3>
+
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(185)</span>
+                        </div>
+
+                        <div class="product-bottom">
+
+                            <div class="price">
+                                <small>Starting from</small>
+                                <strong>₹2,499</strong>
+                            </div>
+
+                          <button
+    class="add-cart"
+    type="button"
+    aria-label="Add product to cart"
+    title="Add to Cart"
+>
+    <i class="fa-solid fa-cart-plus"></i>
+</button>
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+
+<!-- =====================================================
+     PRODUCT SLIDER CONTROLS
+====================================================== -->
+
+<div class="slider-controls">
+
+    <!-- Previous Button -->
+    <button
+        class="slider-btn"
+        id="productPrev"
+        type="button"
+        aria-label="Previous products"
+    >
+        <i class="fa-solid fa-arrow-left"></i>
+    </button>
+
+
+    <!-- Dots -->
+    <div
+        class="slider-dots"
+        id="productDots"
+        aria-label="Product slider navigation"
+    >
+
+        <button
+            class="dot active"
+            type="button"
+            aria-label="Go to slide 1"
+        ></button>
+
+        <button
+            class="dot"
+            type="button"
+            aria-label="Go to slide 2"
+        ></button>
+
+        <button
+            class="dot"
+            type="button"
+            aria-label="Go to slide 3"
+        ></button>
+
+        <button
+            class="dot"
+            type="button"
+            aria-label="Go to slide 4"
+        ></button>
+
+    </div>
+
+
+    <!-- Next Button -->
+    <button
+        class="slider-btn"
+        id="productNext"
+        type="button"
+        aria-label="Next products"
+    >
+        <i class="fa-solid fa-arrow-right"></i>
+    </button>
+
+</div>
+
+
+        <!-- Bottom Info -->
+
+        <div class="products-bottom-info">
+
+            <div>
+                <i class="fa-solid fa-shield-halved"></i>
+                <span>100% Genuine Products</span>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-truck-fast"></i>
+                <span>Fast Delivery</span>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-headset"></i>
+                <span>Expert Support</span>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-lock"></i>
+                <span>Secure Payment</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =====================================================
+     5. OFFER / DEAL SECTION
+====================================================== -->
+
+<section class="offer-section" id="offers">
+
+    <!-- Background Effects -->
+    <div class="offer-orb offer-orb-one"></div>
+    <div class="offer-orb offer-orb-two"></div>
+
+    <div class="offer-grid"></div>
+
+    <div class="container">
+
+        <div class="offer-content">
+
+
+            <!-- =========================================
+                 LEFT CONTENT
+            ========================================== -->
+
+            <div class="offer-text">
+
+                <span class="offer-tag">
+                    <i class="fa-solid fa-bolt"></i>
+                    LIMITED TIME OFFER
+                </span>
+
+
+                <h2>
+                    Power Up Your
+                    <span>Performance</span>
+                </h2>
+
+
+                <p>
+                    Upgrade your gaming setup with powerful
+                    performance and next-generation technology.
+                    Grab exclusive deals before they disappear.
+                </p>
+
+
+                <!-- Discount Box -->
+
+                <div class="discount-box">
+
+                    <div class="discount-number">
+                        40
+                        <small>%</small>
+                    </div>
+
+                    <div class="discount-text">
+                        <strong>OFF</strong>
+                        <span>SELECTED PRODUCTS</span>
+                    </div>
+
+                </div>
+
+
+                <!-- Price -->
+
+                <div class="offer-price">
+
+                    <span>Starting From</span>
+
+                    <strong>
+                        ₹59,999
+                    </strong>
+
+                    <del>
+                        ₹99,999
+                    </del>
+
+                </div>
+
+
+                <!-- Countdown -->
+
+                <div class="deal-timer">
+
+                    <div class="timer-box">
+                        <strong id="offerDays">02</strong>
+                        <span>DAYS</span>
+                    </div>
+
+                    <div class="timer-colon">:</div>
+
+                    <div class="timer-box">
+                        <strong id="offerHours">18</strong>
+                        <span>HOURS</span>
+                    </div>
+
+                    <div class="timer-colon">:</div>
+
+                    <div class="timer-box">
+                        <strong id="offerMinutes">45</strong>
+                        <span>MIN</span>
+                    </div>
+
+                    <div class="timer-colon">:</div>
+
+                    <div class="timer-box">
+                        <strong id="offerSeconds">30</strong>
+                        <span>SEC</span>
+                    </div>
+
+                </div>
+
+
+                <!-- Button -->
+
+                <a href="#products" class="offer-btn">
+
+                    <span>
+                        Grab The Deal
+                    </span>
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+
+                <!-- Trust -->
+
+                <div class="offer-trust">
+
+                    <div>
+                        <i class="fa-solid fa-shield-halved"></i>
+                        Secure Payment
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-truck-fast"></i>
+                        Fast Delivery
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =========================================
+                 RIGHT IMAGE
+            ========================================== -->
+
+            <div class="offer-image">
+
+                <!-- Glow -->
+
+                <div class="pc-glow"></div>
+
+
+                <!-- Rotating Ring -->
+
+                <div class="pc-ring ring-one"></div>
+
+                <div class="pc-ring ring-two"></div>
+
+
+                <!-- Gaming PC -->
+
+                <img
+                    src="./assets/gaming-pc.webp"
+                    alt="Gaming PC"
+                >
+
+
+                <!-- Floating Discount -->
+
+                <div class="floating-discount">
+
+                    <span>UP TO</span>
+
+                    <strong>
+                        40%
+                    </strong>
+
+                    <small>OFF</small>
+
+                </div>
+
+
+                <!-- Floating Gaming Card -->
+
+                <div class="floating-spec">
+
+                    <i class="fa-solid fa-microchip"></i>
+
+                    <div>
+                        <strong>
+                            RTX GAMING
+                        </strong>
+
+                        <span>
+                            Next Gen Performance
+                        </span>
+                    </div>
+
+                </div>
+
+
+                <!-- Floating Rating -->
+
+                <div class="floating-rating">
+
+                    <div class="rating-stars">
+
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+
+                    </div>
+
+                    <span>
+                        4.9/5 Rating
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =====================================================
+     6. ABOUT SECTION
+===================================================== -->
+
+<section class="about-section" id="about">
+
+    <!-- Background -->
+    <div class="about-bg-circle about-bg-one"></div>
+    <div class="about-bg-circle about-bg-two"></div>
+    <div class="about-grid"></div>
+
+    <div class="about-container">
+
+        <!-- ================= ABOUT IMAGE ================= -->
+
+        <div class="about-image">
+
+            <div class="about-image-frame">
+
+                <span class="image-line line-one"></span>
+                <span class="image-line line-two"></span>
+
+                <img
+                    src="./assets/store.webp"
+                    alt="TechNova Computer Store"
+                >
+
+            </div>
+
+            <!-- Experience -->
+            <div class="experience-card">
+
+                <strong>10+</strong>
+
+                <span>
+                    Years Experience
+                </span>
+
+            </div>
+
+            <!-- Trusted -->
+            <div class="about-floating-badge">
+
+                <div class="badge-icon">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+
+                <div class="badge-text">
+
+                    <strong>100%</strong>
+
+                    <span>
+                        Trusted
+                    </span>
+
+                </div>
+
+            </div>
+
+            <!-- Dots -->
+            <div class="about-dots"></div>
+
+            <!-- Floating Icons -->
+            <div class="floating-tech-icon tech-one">
+                <i class="fa-solid fa-laptop"></i>
+            </div>
+
+            <div class="floating-tech-icon tech-two">
+                <i class="fa-solid fa-microchip"></i>
+            </div>
+
+        </div>
+
+
+        <!-- ================= ABOUT CONTENT ================= -->
+
+        <div class="about-content">
+
+            <span class="section-tag">
+
+                <i class="fa-solid fa-bolt"></i>
+
+                ABOUT TECHNOVA
+
+            </span>
+
+            <h2>
+
+                Technology That
+
+                <span>
+                    Moves You Forward
+                </span>
+
+            </h2>
+
+            <p class="about-description">
+
+                TechNova is your trusted destination for computers,
+                laptops, gaming systems and technology accessories.
+                We bring modern technology closer to you with
+                quality products and expert service.
+
+            </p>
+
+            <p class="about-description second">
+
+                From everyday computing to powerful gaming systems,
+                our team helps you choose the right technology for
+                your needs at competitive prices.
+
+            </p>
+
+
+            <!-- Features -->
+
+            <div class="about-list">
+
+                <div class="about-feature">
+
+                    <div class="about-check">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Genuine Products
+                        </strong>
+
+                        <span>
+                            100% original technology products
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="about-feature">
+
+                    <div class="about-check">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Trusted Brands
+                        </strong>
+
+                        <span>
+                            Premium brands you can trust
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="about-feature">
+
+                    <div class="about-check">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Expert Technical Support
+                        </strong>
+
+                        <span>
+                            Professional support whenever needed
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="about-feature">
+
+                    <div class="about-check">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Easy Returns
+                        </strong>
+
+                        <span>
+                            Simple and customer-friendly returns
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Button -->
+
+            <a
+                href="#contact"
+                class="about-btn"
+            >
+
+                <span>
+                    Learn More
+                </span>
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     7. SERVICES SECTION
+===================================================== -->
+
+<section class="services-section" id="services">
+
+    <!-- Background -->
+    <div class="services-bg"></div>
+    <div class="services-grid"></div>
+
+    <div class="container">
+
+        <!-- ================= HEADING ================= -->
+
+        <div class="section-heading services-heading">
+
+            <span class="section-tag">
+
+                <i class="fa-solid fa-gears"></i>
+
+                OUR SERVICES
+
+            </span>
+
+            <h2>
+
+                More Than Just
+
+                <span>
+                    Technology
+                </span>
+
+            </h2>
+
+            <p>
+
+                Complete technology solutions designed to keep
+                your digital world running smoothly.
+
+            </p>
+
+        </div>
+
+
+        <!-- ================= SERVICES ================= -->
+
+        <div class="services-flow">
+
+
+            <!-- SERVICE 01 -->
+
+            <article class="service-step">
+
+                <div class="step-number">
+                    01
+                </div>
+
+                <div class="step-line"></div>
+
+                <div class="service-card">
+
+                    <div class="service-top">
+
+                        <div class="service-icon">
+
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+
+                        </div>
+
+                        <span class="service-step-label">
+                            STEP 01
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        Computer Repair
+                    </h3>
+
+                    <p>
+
+                        Professional hardware and software
+                        repair services to keep your systems
+                        running at peak performance.
+
+                    </p>
+
+                    <div class="service-bottom">
+
+                        <span>
+                            Hardware + Software
+                        </span>
+
+                        <a
+                            href="#contact"
+                            class="arrow-btn"
+                            aria-label="Computer repair contact"
+                        >
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- SERVICE 02 -->
+
+            <article class="service-step">
+
+                <div class="step-number">
+                    02
+                </div>
+
+                <div class="step-line"></div>
+
+                <div class="service-card">
+
+                    <div class="service-top">
+
+                        <div class="service-icon">
+
+                            <i class="fa-solid fa-microchip"></i>
+
+                        </div>
+
+                        <span class="service-step-label">
+                            STEP 02
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        PC Building
+                    </h3>
+
+                    <p>
+
+                        Custom-built computers designed around
+                        your gaming, business and performance
+                        requirements.
+
+                    </p>
+
+                    <div class="service-bottom">
+
+                        <span>
+                            Custom Performance
+                        </span>
+
+                        <a
+                            href="#contact"
+                            class="arrow-btn"
+                            aria-label="PC building contact"
+                        >
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- SERVICE 03 -->
+
+            <article class="service-step">
+
+                <div class="step-number">
+                    03
+                </div>
+
+                <div class="step-line"></div>
+
+                <div class="service-card">
+
+                    <div class="service-top">
+
+                        <div class="service-icon">
+
+                            <i class="fa-solid fa-cloud"></i>
+
+                        </div>
+
+                        <span class="service-step-label">
+                            STEP 03
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        IT Solutions
+                    </h3>
+
+                    <p>
+
+                        Reliable technology and cloud solutions
+                        for businesses, teams and individual
+                        professionals.
+
+                    </p>
+
+                    <div class="service-bottom">
+
+                        <span>
+                            Smart IT Solutions
+                        </span>
+
+                        <a
+                            href="#contact"
+                            class="arrow-btn"
+                            aria-label="IT solutions contact"
+                        >
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- SERVICE 04 -->
+
+            <article class="service-step">
+
+                <div class="step-number">
+                    04
+                </div>
+
+                <div class="step-line"></div>
+
+                <div class="service-card">
+
+                    <div class="service-top">
+
+                        <div class="service-icon">
+
+                            <i class="fa-solid fa-headset"></i>
+
+                        </div>
+
+                        <span class="service-step-label">
+                            STEP 04
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        Technical Support
+                    </h3>
+
+                    <p>
+
+                        Get expert technical assistance whenever
+                        you need help with your devices or
+                        technology setup.
+
+                    </p>
+
+                    <div class="service-bottom">
+
+                        <span>
+                            24/7 Assistance
+                        </span>
+
+                        <a
+                            href="#contact"
+                            class="arrow-btn"
+                            aria-label="Technical support contact"
+                        >
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+
+        <!-- ================= FOOTER MESSAGE ================= -->
+
+        <div class="services-footer">
+
+            <div class="services-footer-icon">
+
+                <i class="fa-solid fa-circle-check"></i>
+
+            </div>
+
+            <div>
+
+                <strong>
+                    Complete Technology Care
+                </strong>
+
+                <span>
+                    From setup to support, we've got you covered.
+                </span>
+
+            </div>
+
+            <i class="fa-solid fa-arrow-right footer-arrow"></i>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =====================================================
+     8. REVIEWS SECTION
+====================================================== -->
+
+<section class="reviews-section" id="reviews">
+
+    <!-- Background Effects -->
+
+    <div class="review-glow review-glow-one"></div>
+    <div class="review-glow review-glow-two"></div>
+
+    <div class="container">
+
+        <!-- Heading -->
+
+        <div class="section-heading reviews-heading">
+
+            <span class="section-tag">
+                <i class="fa-solid fa-heart"></i>
+                CUSTOMER REVIEWS
+            </span>
+
+            <h2>
+                Loved By
+                <span>Our Customers</span>
+            </h2>
+
+            <p>
+                Real experiences from customers who trust TechNova.
+            </p>
+
+        </div>
+
+
+        <!-- =================================================
+             REVIEW SLIDER
+        ================================================== -->
+
+        <div class="review-slider">
+
+
+            <!-- LEFT ARROW -->
+
+            <button
+                class="review-arrow review-prev"
+                type="button"
+                aria-label="Previous review"
+            >
+                <i class="fa-solid fa-arrow-left"></i>
+            </button>
+
+
+            <!-- REVIEW CARD -->
+
+            <div class="review-card">
+
+
+                <!-- Quote -->
+
+                <div class="quote-icon">
+                    <i class="fa-solid fa-quote-left"></i>
+                </div>
+
+
+                <!-- Customer Image -->
+
+                <div class="review-image-wrap">
+
+                    <div class="review-image-ring"></div>
+
+                    <img
+                        id="reviewImage"
+                        src="./assets/customer-1.webp"
+                        alt="Rahul Kumar"
+                    >
+
+                    <div class="verified-icon">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+
+                </div>
+
+
+                <!-- Stars -->
+
+                <div
+                    class="review-stars"
+                    id="reviewStars"
+                >
+                    ★★★★★
+                </div>
+
+
+                <!-- Review -->
+
+                <p
+                    class="review-text"
+                    id="reviewText"
+                >
+                    "Amazing shopping experience. The laptop quality
+                    is excellent and delivery was very fast."
+                </p>
+
+
+                <!-- User -->
+
+                <div class="review-user">
+
+                    <strong id="reviewName">
+                        Rahul Kumar
+                    </strong>
+
+                    <span id="reviewRole">
+                        Verified Customer
+                    </span>
+
+                </div>
+
+
+                <!-- Counter -->
+
+                <div class="review-counter">
+
+                    <span id="reviewCurrent">
+                        01
+                    </span>
+
+                    <div class="counter-line"></div>
+
+                    <span>
+                        03
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT ARROW -->
+
+            <button
+                class="review-arrow review-next"
+                type="button"
+                aria-label="Next review"
+            >
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+        </div>
+
+
+        <!-- =================================================
+             DOTS
+        ================================================== -->
+
+        <div class="review-dots">
+
+            <button
+                class="review-dot active"
+                data-review="0"
+                aria-label="Review 1"
+            ></button>
+
+            <button
+                class="review-dot"
+                data-review="1"
+                aria-label="Review 2"
+            ></button>
+
+            <button
+                class="review-dot"
+                data-review="2"
+                aria-label="Review 3"
+            ></button>
+
+        </div>
+
+
+        <!-- Bottom Trust -->
+
+        <div class="review-trust">
+
+            <div class="trust-item">
+
+                <i class="fa-solid fa-star"></i>
+
+                <div>
+                    <strong>4.9/5</strong>
+                    <span>Customer Rating</span>
+                </div>
+
+            </div>
+
+
+            <div class="trust-item">
+
+                <i class="fa-solid fa-users"></i>
+
+                <div>
+                    <strong>10K+</strong>
+                    <span>Happy Customers</span>
+                </div>
+
+            </div>
+
+
+            <div class="trust-item">
+
+                <i class="fa-solid fa-shield-halved"></i>
+
+                <div>
+                    <strong>100%</strong>
+                    <span>Verified Reviews</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =====================================================
+     CONTACT SECTION - BIG IMAGE DESIGN
+====================================================== -->
+
+<section class="contact-section-new" id="contact">
+
+    <!-- Background -->
+
+    <div class="contact-bg-glow contact-glow-one"></div>
+    <div class="contact-bg-glow contact-glow-two"></div>
+
+    <div class="contact-floating contact-shape-one"></div>
+    <div class="contact-floating contact-shape-two"></div>
+
+
+    <div class="container">
+
+        <!-- Heading -->
+
+        <div class="contact-heading">
+
+            <span class="contact-tag">
+                <i class="fa-solid fa-paper-plane"></i>
+                GET IN TOUCH
+            </span>
+
+            <h2>
+                Let's Talk
+                <span>Technology</span>
+            </h2>
+
+            <p>
+                Have a question about a product, order or technical
+                support? Our team is ready to help.
+            </p>
+
+        </div>
+
+
+        <!-- =================================================
+             CONTACT MAIN
+        ================================================== -->
+
+        <div class="contact-main">
+
+
+            <!-- LEFT BIG IMAGE -->
+
+            <div class="contact-image-main">
+
+                <img
+                    src="./assets/contact-store.webp"
+                    alt="TechNova Store"
+                >
+
+                <div class="image-overlay"></div>
+
+
+                <!-- Image Text -->
+
+                <div class="image-caption">
+
+                    <span>
+                        VISIT OUR STORE
+                    </span>
+
+                    <h3>
+                        Your Technology
+                        <br>
+                        Starts Here.
+                    </h3>
+
+                    <a href="#contact-info">
+                        Find Us
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+
+                <!-- Floating Image Icon -->
+
+                <div class="image-floating-icon">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT CONTENT -->
+
+            <div class="contact-content">
+
+
+                <!-- SMALL IMAGE -->
+
+                <div class="contact-mini-image">
+
+                    <img
+                        src="./assets/contact-team.webp"
+                        alt="TechNova Support Team"
+                    >
+
+                    <div class="mini-image-badge">
+
+                        <i class="fa-solid fa-headset"></i>
+
+                        <span>
+                            We're Online
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Contact Info -->
+
+                <div
+                    class="contact-info"
+                    id="contact-info"
+                >
+
+
+                    <!-- PHONE -->
+
+                    <a
+                        href="tel:+919876543210"
+                        class="contact-item"
+                    >
+
+                        <div class="contact-icon phone-icon">
+
+                            <i class="fa-solid fa-phone"></i>
+
+                        </div>
+
+                        <div class="contact-text">
+
+                            <span>
+                                CALL US
+                            </span>
+
+                            <strong>
+                                +91 98765 43210
+                            </strong>
+
+                            <small>
+                                Mon - Sat / 9:00 AM - 8:00 PM
+                            </small>
+
+                        </div>
+
+                        <i
+                            class="fa-solid fa-arrow-up-right-from-square contact-arrow"
+                        ></i>
+
+                    </a>
+
+
+                    <!-- EMAIL -->
+
+                    <a
+                        href="mailto:support@technova.com"
+                        class="contact-item"
+                    >
+
+                        <div class="contact-icon email-icon">
+
+                            <i class="fa-solid fa-envelope"></i>
+
+                        </div>
+
+                        <div class="contact-text">
+
+                            <span>
+                                EMAIL US
+                            </span>
+
+                            <strong>
+                                support@technova.com
+                            </strong>
+
+                            <small>
+                                We reply within 24 hours
+                            </small>
+
+                        </div>
+
+                        <i
+                            class="fa-solid fa-arrow-up-right-from-square contact-arrow"
+                        ></i>
+
+                    </a>
+
+
+                    <!-- LOCATION -->
+
+                    <div class="contact-item">
+
+                        <div class="contact-icon location-icon">
+
+                            <i class="fa-solid fa-location-dot"></i>
+
+                        </div>
+
+                        <div class="contact-text">
+
+                            <span>
+                                OUR LOCATION
+                            </span>
+
+                            <strong>
+                                Hyderabad, Telangana
+                            </strong>
+
+                            <small>
+                                Visit our technology store
+                            </small>
+
+                        </div>
+
+                        <i
+                            class="fa-solid fa-location-arrow contact-arrow"
+                        ></i>
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- Social -->
+
+              <div class="contact-social">
+
+    <span class="social-label">
+        FOLLOW TECHNOVA
+    </span>
+
+    <div class="social-icons">
+
+        <a href="#" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a href="#" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+        </a>
+
+        <a href="#" aria-label="X">
+            <i class="fa-brands fa-x-twitter"></i>
+        </a>
+
+        <a href="#" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+
+    </div>
+
+</div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             BOTTOM CONTACT STRIP
+        ================================================== -->
+
+        <div class="contact-bottom">
+
+            <div>
+
+                <i class="fa-solid fa-bolt"></i>
+
+                <span>
+                    Fast Response
+                </span>
+
+            </div>
+
+            <div>
+
+                <i class="fa-solid fa-shield-halved"></i>
+
+                <span>
+                    Secure Communication
+                </span>
+
+            </div>
+
+            <div>
+
+                <i class="fa-solid fa-user-tie"></i>
+
+                <span>
+                    Expert Assistance
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+    </main>
+
+<!-- =====================================================
+     FUTURISTIC FOOTER
+====================================================== -->
+
+<footer class="tech-footer">
+
+    <!-- Animated Background -->
+
+    <div class="footer-glow footer-glow-one"></div>
+    <div class="footer-glow footer-glow-two"></div>
+
+    <div class="footer-grid-lines"></div>
+
+
+    <div class="container">
+
+        <!-- =================================================
+             FOOTER MAIN
+        ================================================== -->
+
+        <div class="footer-main">
+
+
+            <!-- BRAND -->
+
+            <div class="footer-brand-new">
+
+                <a href="#home" class="footer-logo">
+
+                    <span class="footer-logo-icon">
+                        <i class="fa-solid fa-laptop"></i>
+                    </span>
+
+                    <span>
+                        Tech<span>Nova</span>
+                    </span>
+
+                </a>
+
+
+                <p>
+                    Your trusted destination for computers,
+                    laptops, gaming systems and next-generation
+                    technology solutions.
+                </p>
+
+
+                <!-- Social Icons -->
+
+                <div class="footer-social">
+
+                    <a href="404.html" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="404.html" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="404.html" aria-label="X">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+
+                    <a href="404.html" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+
+                    <a href="404.html" aria-label="YouTube">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- QUICK LINKS -->
+
+            <div class="footer-links-new">
+
+                <div class="footer-title">
+
+                    <span class="title-line"></span>
+
+                    <h3>
+                        Quick Links
+                    </h3>
+
+                </div>
+
+
+                <a href="index.html">
+                    <i class="fa-solid fa-angle-right"></i>
+                    Home
+                </a>
+
+                <a href="about.html">
+                    <i class="fa-solid fa-angle-right"></i>
+                    Products
+                </a>
+
+                <a href="services.html">
+                    <i class="fa-solid fa-angle-right"></i>
+                    Categories
+                </a>
+
+                <a href="about.html">
+                    <i class="fa-solid fa-angle-right"></i>
+                    About Us
+                </a>
+
+            </div>
+
+
+            <!-- SERVICES -->
+
+            <div class="footer-links-new">
+
+                <div class="footer-title">
+
+                    <span class="title-line"></span>
+
+                    <h3>
+                        Services
+                    </h3>
+
+                </div>
+
+
+                <a href="services.html">
+                    <i class="fa-solid fa-angle-right"></i>
+                    Computer Repair
+                </a>
+
+                <a href="404.html">
+                    <i class="fa-solid fa-angle-right"></i>
+                    PC Building
+                </a>
+
+                <a href="404.html">
+                    <i class="fa-solid fa-angle-right"></i>
+                    IT Solutions
+                </a>
+
+                <a href="404.html">
+                    <i class="fa-solid fa-angle-right"></i>
+                    Technical Support
+                </a>
+
+            </div>
+
+
+            <!-- NEWSLETTER -->
+
+            <div class="footer-newsletter">
+
+                <div class="footer-title">
+
+                    <span class="title-line"></span>
+
+                    <h3>
+                        Stay Updated
+                    </h3>
+
+                </div>
+
+
+                <p>
+                    Subscribe to receive the latest technology
+                    news, products and exclusive offers.
+                </p>
+
+
+                <form
+                    class="footer-newsletter-form"
+                    id="newsletterForm"
+                >
+
+                    <div class="newsletter-input">
+
+                        <i class="fa-regular fa-envelope"></i>
+
+                        <input
+                            type="email"
+                            placeholder="Enter your email"
+                            required
+                        >
+
+                    </div>
+
+<button type="submit" class="send-btn" aria-label="Send message">
+    <i class="fa-solid fa-paper-plane"></i>
+    <span>Send</span>
+</button>
+
+                </form>
+
+
+                <div class="secure-text">
+
+                    <i class="fa-solid fa-shield-halved"></i>
+
+                    <span>
+                        Your information is secure
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             FEATURE STRIP
+        ================================================== -->
+
+        <div class="footer-feature-strip">
+
+            <div>
+
+                <i class="fa-solid fa-truck-fast"></i>
+
+                <span>
+                    Fast Delivery
+                </span>
+
+            </div>
+
+
+            <div>
+
+                <i class="fa-solid fa-shield-halved"></i>
+
+                <span>
+                    Secure Shopping
+                </span>
+
+            </div>
+
+
+            <div>
+
+                <i class="fa-solid fa-headset"></i>
+
+                <span>
+                    Expert Support
+                </span>
+
+            </div>
+
+
+            <div>
+
+                <i class="fa-solid fa-award"></i>
+
+                <span>
+                    Genuine Products
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             FOOTER BOTTOM
+        ================================================== -->
+
+        <div class="footer-bottom-new">
+
+            <p>
+                © 2026
+                <strong>Stackly</strong>.
+                All Rights Reserved.
+            </p>
+
+
+            <div class="footer-policy">
+
+                <a href="404.html">
+                    Privacy Policy
+                </a>
+
+                <span></span>
+
+                <a href="404.html">
+                    Terms & Conditions
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+    <script src="css/js/script.js"></script>
+
+</body>
+</html>
