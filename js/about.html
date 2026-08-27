@@ -1,0 +1,1557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TechNova - Computer Store</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./css/assets/favicon.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/about.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+
+<body>
+
+    <!-- ================= PRELOADER ================= -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-spinner"></div>
+    </div>
+
+    
+     <!-- =====================================================
+     HEADER / NAVBAR
+====================================================== -->
+<header class="site-header" id="header">
+<div class="container header-container">
+
+    <!-- ================= LOGO ================= -->
+    <a href="index.html" class="site-logo" aria-label="TechNova Home">
+
+        <img
+            src="./css/assets/image-12.webp"
+            alt=""
+            class="logo-image"
+        >
+
+    </a>
+
+
+
+
+        <!-- ================= NAVIGATION ================= -->
+        <nav class="navbar" id="navbar">
+ <a href="index.html" class="nav-link ">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+            </a>
+
+            <a href="about.html" class="nav-link">
+                <i class="fa-solid fa-box"></i>
+                <span>About</span>
+            </a>
+
+            <a href="services.html" class="nav-link">
+                <i class="fa-solid fa-layer-group"></i>
+                <span>Services</span>
+            </a>
+
+            <a href="blog.html" class="nav-link">
+                <i class="fa-solid fa-circle-info"></i>
+                <span>Blog</span>
+            </a>
+
+            <a href="contact.html" class="nav-link">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <span>Contact</span>
+            </a>
+
+            <!-- Mobile Login -->
+            <a href="signup.html" class="mobile-login-btn">
+                <i class="fa-solid fa-right-to-bracket"></i>
+                <span>Login</span>
+            </a>
+
+        </nav>
+
+
+        <!-- ================= RIGHT ACTIONS ================= -->
+        <div class="header-actions">
+
+            <!-- Search -->
+           <button
+    class="icon-btn"
+    id="searchBtn"
+    type="button"
+    aria-label="Search"
+    onclick="window.location.href='404.html'">
+
+    <i class="fa-solid fa-magnifying-glass"></i>
+
+</button>
+
+            <!-- Cart -->
+          <button
+    class="icon-btn cart-btn"
+    id="cartBtn"
+    type="button"
+    aria-label="Shopping Cart"
+    onclick="window.location.href='404.html'">
+
+    <i class="fa-solid fa-cart-shopping"></i>
+
+    <span class="cart-count" id="cartCount">
+        0
+    </span>
+
+</button>
+
+
+            <!-- Desktop Login -->
+            <a href="login.html" class="login-btn">
+                <i class="fa-solid fa-user"></i>
+                <span>Login</span>
+            </a>
+
+
+            <!-- Mobile Menu -->
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="navbar"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+
+<!-- ================= SEARCH BOX ================= -->
+
+<div class="search-overlay" id="searchOverlay">
+
+    <div class="search-box">
+<button 
+    class="close-search" 
+    id="closeSearch" 
+    type="button"
+    aria-label="Close search"
+    title="Close Search"
+>
+    <i class="fa-solid fa-xmark"></i>
+</button>
+        <h2>Find Your Gadget</h2>
+
+        <div class="search-input">
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input type="text"
+                   id="productSearch"
+                   placeholder="Search headphones, camera, laptop...">
+        </div>
+
+    </div>
+
+</div>
+
+
+<main>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-particles">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div class="container hero-grid">
+
+        <div class="hero-content reveal">
+
+            <span class="hero-tag">
+                <i class="fa-solid fa-bolt"></i>
+                NEW COLLECTION 2026
+            </span>
+
+            <h1>
+                Your Trusted 
+                <span>Stackly</span>
+                Device Partner
+            </h1>
+
+            <p>
+              Discover smart technology, premium accessories, and next-generation 
+              stackly designed to elevate your everyday digital
+               lifestyle with Stackly.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="404.html" class="btn btn-primary">
+                    Shop Now
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <a href="404.html" class="btn btn-outline">
+                    Explore More
+                </a>
+
+            </div>
+
+            <div class="hero-stats">
+
+                <div>
+                    <strong data-counter="1200">0</strong>
+                    <span>Products</span>
+                </div>
+
+                <div>
+                    <strong data-counter="850">0</strong>
+                    <span>Customers</span>
+                </div>
+
+                <div>
+                    <strong data-counter="25">0</strong>
+                    <span>Brands</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-image reveal">
+
+            <div class="hero-circle"></div>
+
+            <img
+                src="css/assets/img18.webp"
+                alt="Modern gadgets">
+
+            <div class="floating-card card-one">
+                <i class="fa-solid fa-headphones"></i>
+                <div>
+                    <strong>Premium Audio</strong>
+                    <small>Up to 40% OFF</small>
+                </div>
+            </div>
+
+            <div class="floating-card card-two">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                <div>
+                    <strong>Smart Devices</strong>
+                    <small>Latest Collection</small>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CATEGORIES ================= -->
+<!-- =====================================================
+     BEST SELLERS - 3D COVERFLOW STACK
+===================================================== -->
+
+<section class="best-sellers-section" id="best-sellers">
+
+    <!-- Animated Background -->
+    <div class="seller-bg seller-bg-one"></div>
+    <div class="seller-bg seller-bg-two"></div>
+
+    <div class="container">
+
+        <!-- Heading -->
+        <div class="best-seller-heading reveal">
+
+            <span class="seller-tag">
+                <i class="fa-solid fa-fire"></i>
+                BEST SELLERS
+            </span>
+
+            <h2>
+                Trending
+                <span>Stackly Tech Picks</span>
+            </h2>
+
+            <p>
+                Explore our most popular products loved by tech enthusiasts.
+            </p>
+
+        </div>
+
+
+        <!-- 3D COVERFLOW -->
+        <div class="seller-coverflow">
+
+
+            <!-- Card 1 -->
+            <div class="seller-card seller-card-left reveal">
+
+                <div class="seller-number">01</div>
+
+                <div class="seller-image">
+                    <img
+                        src="css/assets/img23.webp"
+                        alt="Premium Laptop"
+                    >
+                </div>
+
+                <div class="seller-content">
+
+                    <span>PREMIUM</span>
+
+                    <h3>
+                        Pro Laptop
+                    </h3>
+
+                    <p>
+                        Powerful performance for work & creativity.
+                    </p>
+
+                    <a href="404.html">
+                        Explore
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Card 2 -->
+            <div class="seller-card seller-card-center reveal">
+
+                <div class="seller-badge">
+                    <i class="fa-solid fa-bolt"></i>
+                    #1 TRENDING
+                </div>
+
+                <div class="seller-number">02</div>
+
+                <div class="seller-image">
+                    <img
+                        src="css/assets/img13.webp"
+                        alt="Gaming Setup"
+                    >
+                </div>
+
+                <div class="seller-content">
+
+                    <span>GAMING</span>
+
+                    <h3>
+                        Gaming Beast
+                    </h3>
+
+                    <p>
+                        Next-level gaming power with immersive performance.
+                    </p>
+
+                    <a href="404.html">
+                        Shop Now
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Card 3 -->
+            <div class="seller-card seller-card-right reveal">
+
+                <div class="seller-number">03</div>
+
+                <div class="seller-image">
+                    <img
+                        src="css/assets/img7.webp"
+                        alt="Wireless Headphones"
+                    >
+                </div>
+
+                <div class="seller-content">
+
+                    <span>AUDIO</span>
+
+                    <h3>
+                        Smart Audio
+                    </h3>
+
+                    <p>
+                        Crystal-clear sound with premium comfort.
+                    </p>
+
+                    <a href="404.html">
+                        Discover
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Bottom Stats -->
+
+        <div class="seller-stats reveal">
+
+            <div class="seller-stat">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <div>
+                    <strong>25K+</strong>
+                    <span>Products Sold</span>
+                </div>
+            </div>
+
+            <div class="seller-stat">
+                <i class="fa-solid fa-star"></i>
+                <div>
+                    <strong>4.9/5</strong>
+                    <span>Customer Rating</span>
+                </div>
+            </div>
+
+            <div class="seller-stat">
+                <i class="fa-solid fa-truck-fast"></i>
+                <div>
+                    <strong>24 Hrs</strong>
+                    <span>Fast Delivery</span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= DEALS ================= -->
+
+<section class="deals section" id="deals">
+
+    <div class="container">
+
+        <div class="deal-header reveal">
+
+            <div>
+                <span>LIMITED TIME OFFER</span>
+                <h2>Deal of the Day</h2>
+            </div>
+
+            <div class="countdown">
+
+                <div>
+                    <strong id="hours">12</strong>
+                    <small>Hours</small>
+                </div>
+
+                <b>:</b>
+
+                <div>
+                    <strong id="minutes">45</strong>
+                    <small>Minutes</small>
+                </div>
+
+                <b>:</b>
+
+                <div>
+                    <strong id="seconds">30</strong>
+                    <small>Seconds</small>
+                </div>
+
+            </div>
+
+            <a href="404.html" class="view-all">
+                View All
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+
+        <div class="product-grid" id="productGrid">
+
+
+            <!-- PRODUCT 1 -->
+
+            <article class="product-card reveal">
+
+                <div class="product-image">
+
+                    <span class="discount">-35%</span>
+
+               <button 
+    class="wishlist" 
+    type="button" 
+    aria-label="Add to wishlist"
+    title="Add to Wishlist"
+>
+    <i class="fa-regular fa-heart"></i>
+</button>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1579586337278-3befd40fd17a?auto=format&fit=crop&w=600&q=80"
+                        alt="Smart Watch">
+
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-category">SMART WATCH</span>
+
+                    <h3>Smart Watch Pro X</h3>
+
+                    <div class="rating">
+                        ★★★★★
+                        <small>(128)</small>
+                    </div>
+
+                    <div class="price">
+                        <strong>$89</strong>
+                        <del>$139</del>
+                    </div>
+
+                   <a href="404.html" class="add-cart">
+    Add To Cart
+    <i class="fa-solid fa-cart-shopping"></i>
+</a>
+                </div>
+
+            </article>
+
+
+            <!-- PRODUCT 2 -->
+
+            <article class="product-card reveal">
+
+                <div class="product-image">
+
+                    <span class="discount">-28%</span>
+
+             <button 
+    class="wishlist" 
+    type="button" 
+    aria-label="Add to wishlist"
+    title="Add to Wishlist"
+>
+    <i class="fa-regular fa-heart"></i>
+</button>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1589003077984-894e133dabab?auto=format&fit=crop&w=600&q=80"
+                        alt="Smart Speaker">
+
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-category">SMART HOME</span>
+
+                    <h3>Smart Audio Speaker</h3>
+
+                    <div class="rating">
+                        ★★★★★
+                        <small>(94)</small>
+                    </div>
+
+                    <div class="price">
+                        <strong>$120</strong>
+                        <del>$169</del>
+                    </div>
+<a href="404.html" class="add-cart">
+    Add To Cart
+    <i class="fa-solid fa-cart-shopping"></i>
+</a>
+                </div>
+
+            </article>
+
+
+            <!-- PRODUCT 3 -->
+
+            <article class="product-card reveal">
+
+                <div class="product-image">
+
+                    <span class="discount">-32%</span>
+
+                    <button 
+    class="wishlist" 
+    type="button" 
+    aria-label="Add to wishlist"
+    title="Add to Wishlist"
+>
+    <i class="fa-regular fa-heart"></i>
+</button>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1555617981-dac3880eac6e?auto=format&fit=crop&w=600&q=80"
+                        alt="Security Camera">
+
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-category">SECURITY</span>
+
+                    <h3>Security Camera 4K</h3>
+
+                    <div class="rating">
+                        ★★★★★
+                        <small>(87)</small>
+                    </div>
+
+                    <div class="price">
+                        <strong>$150</strong>
+                        <del>$220</del>
+                    </div>
+<a href="404.html" class="add-cart">
+    Add To Cart
+    <i class="fa-solid fa-cart-shopping"></i>
+</a>
+                </div>
+
+            </article>
+
+
+            <!-- PRODUCT 4 -->
+
+            <article class="product-card reveal">
+
+                <div class="product-image">
+
+                    <span class="discount">-20%</span>
+<button 
+    class="wishlist" 
+    type="button" 
+    aria-label="Add to wishlist"
+    title="Add to Wishlist"
+>
+    <i class="fa-regular fa-heart"></i>
+</button>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=600&q=80"
+                        alt="Gadget">
+
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-category">ACCESSORIES</span>
+
+                    <h3>Air Fresh Gadget</h3>
+
+                    <div class="rating">
+                        ★★★★★
+                        <small>(56)</small>
+                    </div>
+
+                    <div class="price">
+                        <strong>$40</strong>
+                        <del>$50</del>
+                    </div>
+<a href="404.html" class="add-cart">
+    Add To Cart
+    <i class="fa-solid fa-cart-shopping"></i>
+</a>
+
+                </div>
+
+            </article>
+
+
+            <!-- PRODUCT 5 -->
+
+            <article class="product-card reveal">
+
+                <div class="product-image">
+
+                    <span class="discount">-25%</span>
+<button 
+    class="wishlist" 
+    type="button" 
+    aria-label="Add to wishlist"
+    title="Add to Wishlist"
+>
+    <i class="fa-regular fa-heart"></i>
+</button>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1473968512647-3e447244af8f?auto=format&fit=crop&w=600&q=80"
+                        alt="Drone">
+
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-category">DRONES</span>
+
+                    <h3>Quadrocopter Drone</h3>
+
+                    <div class="rating">
+                        ★★★★★
+                        <small>(112)</small>
+                    </div>
+
+                    <div class="price">
+                        <strong>$175</strong>
+                        <del>$235</del>
+                    </div>
+
+                   <a href="404.html" class="add-cart">
+    Add To Cart
+    <i class="fa-solid fa-cart-shopping"></i>
+</a>
+
+                </div>
+
+            </article>
+
+
+            <!-- PRODUCT 6 -->
+
+            <article class="product-card reveal">
+
+                <div class="product-image">
+
+                    <span class="discount">-40%</span>
+<button 
+    class="wishlist" 
+    type="button" 
+    aria-label="Add to wishlist"
+    title="Add to Wishlist"
+>
+    <i class="fa-regular fa-heart"></i>
+</button>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1593118247619-e2d6f056869e?auto=format&fit=crop&w=600&q=80"
+                        alt="VR Headset">
+
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-category">VR GAMING</span>
+
+                    <h3>Pro VR Headset</h3>
+
+                    <div class="rating">
+                        ★★★★★
+                        <small>(76)</small>
+                    </div>
+
+                    <div class="price">
+                        <strong>$139</strong>
+                        <del>$230</del>
+                    </div>
+<a href="404.html" class="add-cart">
+    Add To Cart
+    <i class="fa-solid fa-cart-shopping"></i>
+</a>
+
+                </div>
+
+            </article>
+
+
+            <!-- PRODUCT 7 -->
+
+            <article class="product-card reveal">
+
+                <div class="product-image">
+
+                    <span class="discount">-18%</span>
+<button 
+    class="wishlist" 
+    type="button" 
+    aria-label="Add to wishlist"
+    title="Add to Wishlist"
+>
+    <i class="fa-regular fa-heart"></i>
+</button>
+
+                    <img
+                        src="css/assets/img6.webp"
+                        alt="Gaming Controller">
+
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-category">GAMING</span>
+
+                    <h3>Gamepad AF6</h3>
+
+                    <div class="rating">
+                        ★★★★★
+                        <small>(145)</small>
+                    </div>
+
+                    <div class="price">
+                        <strong>$150</strong>
+                        <del>$180</del>
+                    </div>
+
+                  <a href="404.html" class="add-cart">
+    Add To Cart
+    <i class="fa-solid fa-cart-shopping"></i>
+</a>
+
+                </div>
+
+            </article>
+
+
+            <!-- PRODUCT 8 -->
+
+            <article class="product-card reveal">
+
+                <div class="product-image">
+
+                    <span class="discount">-30%</span>
+<button 
+    class="wishlist" 
+    type="button" 
+    aria-label="Add to wishlist"
+    title="Add to Wishlist"
+>
+    <i class="fa-regular fa-heart"></i>
+</button>
+                    <img
+                        src="https://images.unsplash.com/photo-1527814050087-3793815479db?auto=format&fit=crop&w=600&q=80"
+                        alt="Gaming Mouse">
+
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-category">COMPUTER</span>
+
+                    <h3>Gaming Mouse C502</h3>
+
+                    <div class="rating">
+                        ★★★★★
+                        <small>(63)</small>
+                    </div>
+
+                    <div class="price">
+                        <strong>$50</strong>
+                        <del>$75</del>
+                    </div>
+<a href="404.html" class="add-cart">
+    Add To Cart
+    <i class="fa-solid fa-cart-shopping"></i>
+</a>
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =====================================================
+     PROMO BANNERS
+===================================================== -->
+
+<section class="promo-zone">
+
+    <div class="promo-wrapper">
+
+        <!-- PROMO 1 -->
+        <article class="promo-box promo-cyan reveal">
+
+            <div class="promo-info">
+                <span class="promo-label">01 / NEW DROP</span>
+
+                <h2>
+                    Sound Stackly
+                    <strong>Without Limits</strong>
+                </h2>
+
+                <p>
+                    Experience crystal-clear audio with
+                    next-generation wireless headphones.
+                </p>
+
+                <a href="404.html" class="promo-btn">
+                    Shop Headphones
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </div>
+
+            <div class="promo-visual">
+                <div class="circle-effect"></div>
+
+                <img
+                    src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=900&q=85"
+                    alt="Premium headphones">
+            </div>
+
+        </article>
+
+
+        <!-- PROMO 2 -->
+        <article class="promo-box promo-purple reveal">
+
+            <div class="promo-info">
+                <span class="promo-label">02 / LIMITED EDITION</span>
+
+                <h2>
+                    Upgrade
+                    <strong>Your Lifestyle</strong>
+                </h2>
+
+                <p>
+                    Discover smart gadgets designed for
+                    modern digital living.
+                </p>
+
+                <a href="404.html" class="promo-btn">
+                    Explore Collection
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="promo-visual">
+                <div class="circle-effect"></div>
+
+                <img
+                    src="https://images.unsplash.com/photo-1523206489230-c012c64b2b48?auto=format&fit=crop&w=900&q=85"
+                    alt="Smart technology">
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     SMART TECHNOLOGY BANNER
+===================================================== -->
+
+<section class="tech-banner">
+
+    <div class="tech-grid">
+
+        <div class="tech-content reveal">
+
+            <span class="tech-tag">
+                <i class="fa-solid fa-bolt"></i>
+                SMART TECHNOLOGY
+            </span>
+
+            <h2>
+                Your Stackly
+                <br>
+                <span>World. Reimagined.</span>
+            </h2>
+
+            <p>
+                Powerful devices for gaming, productivity,
+                entertainment and everything in between.
+            </p>
+
+            <div class="tech-offer">
+                <strong>70%</strong>
+                <span>OFF</span>
+            </div>
+
+            <a href="404.html" class="tech-btn">
+                Discover Products
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+
+        <div class="tech-device reveal">
+
+            <div class="device-glow"></div>
+
+            <div class="floating-shape shape-one"></div>
+            <div class="floating-shape shape-two"></div>
+
+            <img
+                src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?auto=format&fit=crop&w=1000&q=85"
+                alt="Smartphone">
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FEATURED PRODUCTS
+===================================================== -->
+
+<section class="trend-section" id="featured">
+
+    <div class="trend-container">
+
+        <div class="trend-heading reveal">
+
+            <div>
+                <span>CURATED COLLECTION</span>
+
+                <h2>
+                    Trending Stackly
+                    <em>Now</em>
+                </h2>
+            </div>
+
+            <p>
+                Explore the technology everyone's
+                talking about.
+            </p>
+
+        </div>
+
+
+        <div class="trend-grid">
+
+            <!-- CARD 1 -->
+            <article class="trend-card trend-large reveal">
+
+                <img
+                    src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=1000&q=85"
+                    alt="Wireless headphones">
+
+                <div class="trend-overlay"></div>
+
+                <div class="trend-content">
+
+                    <span>PREMIUM AUDIO</span>
+
+                    <h3>
+                        Wireless
+                        <br>
+                        Sound Experience
+                    </h3>
+
+                    <a href="404.html">
+                        View Collection
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- CARD 2 -->
+            <article class="trend-card reveal">
+
+                <img
+                    src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=85"
+                    alt="Smartphone">
+
+                <div class="trend-overlay"></div>
+
+                <div class="trend-content">
+
+                    <span>MOBILE</span>
+
+                    <h3>
+                        Power
+                        <br>
+                        In Your Hand
+                    </h3>
+
+                    <a href="404.html">
+                        Shop Now
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- CARD 3 -->
+            <article class="trend-card reveal">
+
+                <img
+                    src="https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=800&q=85"
+                    alt="Computer monitor">
+
+                <div class="trend-overlay"></div>
+
+                <div class="trend-content">
+
+                    <span>WORKSPACE</span>
+
+                    <h3>
+                        Build Your
+                        <br>
+                        Dream Setup
+                    </h3>
+
+                    <a href="404.html">
+                        Explore
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     BRAND SECTION
+===================================================== -->
+
+<section class="brand-showcase">
+
+    <div class="brand-inner">
+
+        <span class="brand-title">
+            POWERED BY THE WORLD'S BEST
+        </span>
+
+        <div class="brand-track">
+
+            <div class="brand-item">
+                <i class="fa-brands fa-apple"></i>
+                <span>APPLE</span>
+            </div>
+
+            <div class="brand-item">
+                <i class="fa-brands fa-google"></i>
+                <span>GOOGLE</span>
+            </div>
+
+            <div class="brand-item">
+                <i class="fa-brands fa-microsoft"></i>
+                <span>MICROSOFT</span>
+            </div>
+
+            <div class="brand-item">
+                <i class="fa-brands fa-playstation"></i>
+                <span>PLAYSTATION</span>
+            </div>
+
+            <div class="brand-item">
+                <i class="fa-brands fa-xbox"></i>
+                <span>XBOX</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+<!-- ================= NEWSLETTER ================= -->
+
+<section class="newsletter">
+
+    <div class="container newsletter-inner">
+
+        <div class="newsletter-text">
+
+            <span>STAY UPDATED</span>
+
+            <h2>Subscribe Newsletter</h2>
+
+            <p>
+                Get exclusive offers, new product alerts
+                and tech news directly in your inbox.
+            </p>
+
+        </div>
+
+
+        <form id="newsletterForm" class="newsletter-form">
+
+            <div class="input-wrapper">
+
+                <i class="fa-regular fa-envelope"></i>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email address"
+                    required>
+
+            </div>
+
+            <button type="submit">
+                Subscribe
+                <i class="fa-solid fa-paper-plane"></i>
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- =====================================================
+     FUTURISTIC FOOTER
+====================================================== -->
+
+<footer class="tech-footer">
+
+    <!-- Animated Background -->
+
+    <div class="footer-glow footer-glow-one"></div>
+    <div class="footer-glow footer-glow-two"></div>
+
+    <div class="footer-grid-lines"></div>
+
+
+    <div class="container">
+
+        <!-- =================================================
+             FOOTER MAIN
+        ================================================== -->
+
+        <div class="footer-main">
+
+
+            <!-- BRAND -->
+<div class="footer-brand-new">
+
+    <a href="index.html" class="footer-logo" aria-label="TechNova Home">
+        <img 
+            src="css/assets/image-12.webp" 
+            alt=""
+            class="footer-logo-image"
+        >
+    </a>
+
+
+
+                <p>
+                    Your Stackly trusted destination for computers,
+                    laptops, gaming systems and next-generation
+                    technology solutions.
+                </p>
+
+<br>
+                <!-- Social Icons -->
+
+                <div class="footer-social">
+
+                    <a href="404.html" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="404.html" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="404.html" aria-label="X">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+
+                    <a href="404.html" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+
+                    <a href="404.html" aria-label="YouTube">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- QUICK LINKS -->
+
+            <div class="footer-links-new">
+
+                <div class="footer-title">
+
+                    <span class="title-line"></span>
+
+                    <h3>
+                        Quick Links
+                    </h3>
+
+                </div>
+
+
+                <a href="index.html">
+                    <i class="fa-solid fa-angle-right"></i>
+                    Home
+                </a>
+
+                <a href="about.html">
+                    <i class="fa-solid fa-angle-right"></i>
+                    Products
+                </a>
+
+                <a href="services.html">
+                    <i class="fa-solid fa-angle-right"></i>
+                    Categories
+                </a>
+
+                <a href="about.html">
+                    <i class="fa-solid fa-angle-right"></i>
+                    About Us
+                </a>
+
+            </div>
+
+
+            <!-- SERVICES -->
+
+            <div class="footer-links-new">
+
+                <div class="footer-title">
+
+                    <span class="title-line"></span>
+
+                    <h3>
+                        Services
+                    </h3>
+
+                </div>
+
+
+                <a href="services.html">
+                    <i class="fa-solid fa-angle-right"></i>
+                    Computer Repair
+                </a>
+
+                <a href="404.html">
+                    <i class="fa-solid fa-angle-right"></i>
+                    PC Building
+                </a>
+
+                <a href="404.html">
+                    <i class="fa-solid fa-angle-right"></i>
+                    IT Solutions
+                </a>
+
+                <a href="404.html">
+                    <i class="fa-solid fa-angle-right"></i>
+                    Technical Support
+                </a>
+
+            </div>
+
+
+            <!-- NEWSLETTER -->
+
+            <div class="footer-newsletter">
+
+                <div class="footer-title">
+
+                    <span class="title-line"></span>
+
+                    <h3>
+                        Stay Updated
+                    </h3>
+
+                </div>
+
+
+                <p>
+                    Subscribe to receive the latest technology
+                    news, products and exclusive offers.
+                </p>
+
+<form
+    class="footer-newsletter-form"
+    id="footerNewsletterForm"
+>
+
+    <div class="newsletter-input">
+
+        <i class="fa-regular fa-envelope"></i>
+
+        <input
+            type="email"
+            id="newsletterEmail"
+            placeholder="Enter your email"
+            autocomplete="email"
+        >
+
+    </div>
+
+    <button
+        type="button"
+        class="send-btn"
+        aria-label="Send message"
+        id="sendBtn"
+    >
+        <i class="fa-solid fa-paper-plane"></i>
+        <span>Send</span>
+    </button>
+
+</form>
+
+<p
+    id="newsletterError"
+    class="newsletter-error"
+></p>
+
+
+                <div class="secure-text">
+
+                    <i class="fa-solid fa-shield-halved"></i>
+
+                    <span>
+                        Your information is secure
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             FEATURE STRIP
+        ================================================== -->
+
+        <div class="footer-feature-strip">
+
+            <div>
+
+                <i class="fa-solid fa-truck-fast"></i>
+
+                <span>
+                    Fast Delivery
+                </span>
+
+            </div>
+
+
+            <div>
+
+                <i class="fa-solid fa-shield-halved"></i>
+
+                <span>
+                    Secure Shopping
+                </span>
+
+            </div>
+
+
+            <div>
+
+                <i class="fa-solid fa-headset"></i>
+
+                <span>
+                    Expert Support
+                </span>
+
+            </div>
+
+
+            <div>
+
+                <i class="fa-solid fa-award"></i>
+
+                <span>
+                    Genuine Products
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             FOOTER BOTTOM
+        ================================================== -->
+
+        <div class="footer-bottom-new">
+
+            <p>
+                © 2026
+                <strong>Stackly</strong>.
+                All Rights Reserved.
+            </p>
+
+
+            <div class="footer-policy">
+
+                <a href="404.html">
+                    Privacy Policy
+                </a>
+
+                <span></span>
+
+                <a href="404.html">
+                    Terms & Conditions
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+    <!-- ================= CART TOAST ================= -->
+    <div class="toast" id="toast">
+        <i class="fa-solid fa-circle-check"></i>
+        <span>Item added to cart</span>
+    </div>
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+    <script src="./js/about.js"></script>
+
+</body>
+</html>
