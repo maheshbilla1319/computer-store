@@ -1,0 +1,1453 @@
+/* =====================================================
+   TECHNOVA COMPUTER STORE
+   404 ERROR PAGE - COMPLETE CSS
+===================================================== */
+
+/* =====================================================
+   1. RESET
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --pink: #ed3158;
+    --pink-light: #ff6b8a;
+    --dark: #08090d;
+    --dark-2: #101218;
+    --white: #ffffff;
+    --gray: #9699a5;
+    --gray-light: #c5c7d0;
+    --border: rgba(255, 255, 255, 0.1);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    background:
+        radial-gradient(
+            circle at 15% 20%,
+            rgba(237, 49, 88, 0.13),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 85% 80%,
+            rgba(255, 80, 120, 0.08),
+            transparent 30%
+        ),
+        var(--dark);
+
+    color: var(--white);
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    overflow-x: hidden;
+}
+
+
+/* =====================================================
+   2. BACKGROUND PARTICLES
+===================================================== */
+
+.background {
+    position: fixed;
+    inset: 0;
+
+    overflow: hidden;
+
+    pointer-events: none;
+
+    z-index: 0;
+}
+
+.background span {
+    position: absolute;
+
+    width: 7px;
+    height: 7px;
+
+    background: var(--pink);
+
+    border-radius: 50%;
+
+    box-shadow:
+        0 0 15px var(--pink),
+        0 0 30px rgba(237, 49, 88, 0.5);
+
+    animation:
+        particleMove 12s linear infinite;
+
+    opacity: 0.45;
+}
+
+.background span:nth-child(1) {
+    left: 10%;
+    top: 90%;
+    animation-delay: 0s;
+}
+
+.background span:nth-child(2) {
+    left: 20%;
+    top: 80%;
+    animation-delay: 2s;
+}
+
+.background span:nth-child(3) {
+    left: 35%;
+    top: 95%;
+    animation-delay: 4s;
+}
+
+.background span:nth-child(4) {
+    left: 50%;
+    top: 85%;
+    animation-delay: 1s;
+}
+
+.background span:nth-child(5) {
+    left: 65%;
+    top: 92%;
+    animation-delay: 5s;
+}
+
+.background span:nth-child(6) {
+    left: 75%;
+    top: 80%;
+    animation-delay: 3s;
+}
+
+.background span:nth-child(7) {
+    left: 88%;
+    top: 95%;
+    animation-delay: 6s;
+}
+
+.background span:nth-child(8) {
+    left: 95%;
+    top: 70%;
+    animation-delay: 2s;
+}
+
+@keyframes particleMove {
+
+    0% {
+        transform:
+            translateY(0)
+            scale(0.5);
+
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0.7;
+    }
+
+    80% {
+        opacity: 0.4;
+    }
+
+    100% {
+        transform:
+            translateY(-110vh)
+            translateX(80px)
+            scale(1.5);
+
+        opacity: 0;
+    }
+}
+
+
+/* =====================================================
+   3. GRID OVERLAY
+===================================================== */
+
+.grid-overlay {
+    position: fixed;
+    inset: 0;
+
+    background-image:
+        linear-gradient(
+            rgba(237, 49, 88, 0.035) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(237, 49, 88, 0.035) 1px,
+            transparent 1px
+        );
+
+    background-size: 55px 55px;
+
+    -webkit-mask-image:
+        linear-gradient(
+            to bottom,
+            black,
+            transparent
+        );
+
+    mask-image:
+        linear-gradient(
+            to bottom,
+            black,
+            transparent
+        );
+
+    pointer-events: none;
+
+    z-index: 0;
+}
+
+
+/* =====================================================
+   4. HEADER
+===================================================== */
+
+.error-header {
+    position: relative;
+
+    z-index: 10;
+
+    width: 100%;
+
+    min-height: 90px;
+
+    padding: 18px 7%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    border-bottom: 1px solid var(--border);
+
+    background:
+        rgba(8, 9, 13, 0.7);
+/* 
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px); */
+}
+
+
+/* Logo */
+
+.error-header .logo {
+    display: inline-flex;
+
+    align-items: center;
+
+    text-decoration: none;
+
+    color: var(--white);
+}
+
+.error-header .logo-icon {
+    width: 150px;
+    height: 70px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+.error-header .logo-icon img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    display: block;
+}
+
+
+/* Home Link */
+
+.home-link {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 10px 18px;
+
+    border: 1px solid var(--border);
+
+    border-radius: 30px;
+
+    color: var(--gray-light);
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    transition: 0.35s ease;
+}
+
+.home-link i {
+    color: var(--pink);
+
+    transition: 0.35s ease;
+}
+
+.home-link:hover {
+    color: var(--white);
+
+    border-color: var(--pink);
+
+    background: rgba(237, 49, 88, 0.08);
+
+    transform: translateY(-2px);
+}
+
+.home-link:hover i {
+    transform: translateX(-4px);
+}
+
+
+/* =====================================================
+   5. MAIN ERROR PAGE
+===================================================== */
+
+.error-page {
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+
+    min-height: calc(100vh - 160px);
+
+    padding:
+        70px 7%
+        80px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 80px;
+}
+
+
+/* =====================================================
+   6. ERROR CONTENT
+===================================================== */
+
+.error-content {
+    width: 100%;
+
+    max-width: 520px;
+
+    animation:
+        slideLeft 1s ease forwards;
+}
+
+@keyframes slideLeft {
+
+    from {
+        opacity: 0;
+
+        transform:
+            translateX(-60px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform:
+            translateX(0);
+    }
+}
+
+
+/* Icon */
+
+.error-icon {
+    width: 60px;
+    height: 60px;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 18px;
+
+    background:
+        rgba(237, 49, 88, 0.1);
+
+    border:
+        1px solid
+        rgba(237, 49, 88, 0.25);
+
+    color: var(--pink);
+
+    font-size: 25px;
+
+    margin-bottom: 20px;
+
+    animation:
+        iconPulse 2s infinite;
+}
+
+@keyframes iconPulse {
+
+    0%,
+    100% {
+        box-shadow:
+            0 0 0
+            rgba(237, 49, 88, 0);
+    }
+
+    50% {
+        box-shadow:
+            0 0 35px
+            rgba(237, 49, 88, 0.3);
+    }
+}
+
+
+/* Label */
+
+.error-label {
+    color: var(--pink);
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 10px;
+}
+
+
+/* 404 */
+
+.error-content h1 {
+    font-size:
+        clamp(100px, 15vw, 180px);
+
+    line-height: 0.8;
+
+    letter-spacing: -12px;
+
+    margin-left: -10px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffffff,
+            var(--pink-light)
+        );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    color: transparent;
+
+    text-shadow:
+        0 0 50px
+        rgba(237, 49, 88, 0.15);
+}
+
+.error-content h1 span {
+    color: var(--pink);
+}
+
+
+/* Heading */
+
+.error-content h2 {
+    font-size: 30px;
+
+    line-height: 1.25;
+
+    margin-top: 30px;
+
+    margin-bottom: 15px;
+}
+
+
+/* Description */
+
+.error-text {
+    color: var(--gray);
+
+    line-height: 1.8;
+
+    max-width: 470px;
+
+    font-size: 15px;
+}
+
+
+/* =====================================================
+   7. BUTTONS
+===================================================== */
+
+.error-buttons {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-top: 30px;
+
+    flex-wrap: wrap;
+}
+
+.primary-btn,
+.secondary-btn {
+    min-height: 48px;
+
+    padding:
+        14px 22px;
+
+    border-radius: 30px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 9px;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    text-decoration: none;
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        background 0.35s ease,
+        color 0.35s ease,
+        border-color 0.35s ease;
+}
+
+
+/* Primary */
+
+.primary-btn {
+    color: var(--white);
+
+    background: var(--pink);
+
+    border: 1px solid var(--pink);
+
+    box-shadow:
+        0 10px 30px
+        rgba(237, 49, 88, 0.25);
+}
+
+.primary-btn:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 15px 40px
+        rgba(237, 49, 88, 0.4);
+}
+
+.primary-btn i {
+    transition: 0.3s ease;
+}
+
+.primary-btn:hover i {
+    transform: translateX(4px);
+}
+
+
+/* Secondary */
+
+.secondary-btn {
+    color: var(--white);
+
+    background: transparent;
+
+    border:
+        1px solid
+        var(--border);
+}
+
+.secondary-btn:hover {
+    border-color: var(--pink);
+
+    color: var(--pink);
+
+    background:
+        rgba(237, 49, 88, 0.05);
+
+    transform: translateY(-5px);
+}
+
+
+/* =====================================================
+   8. COMPUTER AREA
+===================================================== */
+
+.computer-wrapper {
+    width: 470px;
+
+    min-width: 470px;
+
+    position: relative;
+
+    animation:
+        computerFloat 4s ease-in-out infinite;
+}
+
+@keyframes computerFloat {
+
+    0%,
+    100% {
+        transform:
+            translateY(0);
+    }
+
+    50% {
+        transform:
+            translateY(-15px);
+    }
+}
+
+
+/* Glow */
+
+.computer-glow {
+    position: absolute;
+
+    width: 350px;
+    height: 350px;
+
+    left: 50%;
+    top: 50%;
+
+    transform:
+        translate(-50%, -50%);
+
+    background: var(--pink);
+
+    filter: blur(100px);
+
+    opacity: 0.12;
+
+    pointer-events: none;
+}
+
+
+/* =====================================================
+   9. MONITOR
+===================================================== */
+
+.monitor {
+    position: relative;
+
+    width: 390px;
+    height: 260px;
+
+    margin: auto;
+
+    padding: 12px;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #30333c,
+            #0d0e12
+        );
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.12);
+
+    box-shadow:
+        0 35px 80px
+        rgba(0, 0, 0, 0.6),
+
+        inset 0 0 20px
+        rgba(255, 255, 255, 0.04);
+}
+
+
+/* Screen */
+
+.monitor-screen {
+    width: 100%;
+    height: 100%;
+
+    border-radius: 12px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(237, 49, 88, 0.15),
+            transparent 65%
+        ),
+        #08090c;
+
+    border:
+        1px solid
+        rgba(237, 49, 88, 0.2);
+}
+
+
+/* Screen scan line */
+
+.monitor-screen::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 2px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(237, 49, 88, 0.6),
+            transparent
+        );
+
+    animation:
+        scanLine 4s linear infinite;
+
+    pointer-events: none;
+}
+
+@keyframes scanLine {
+
+    0% {
+        top: 0;
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        top: 100%;
+        opacity: 0;
+    }
+}
+
+
+/* =====================================================
+   10. TERMINAL
+===================================================== */
+
+.terminal {
+    position: absolute;
+
+    left: 25px;
+    top: 25px;
+
+    width: 260px;
+
+    padding: 15px;
+
+    border-radius: 10px;
+
+    background:
+        rgba(10, 10, 14, 0.85);
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.08);
+
+    font-family: monospace;
+
+    font-size: 11px;
+
+    box-shadow:
+        0 15px 30px
+        rgba(0, 0, 0, 0.4);
+
+    animation:
+        terminalGlow 2s infinite;
+}
+
+@keyframes terminalGlow {
+
+    0%,
+    100% {
+        border-color:
+            rgba(255, 255, 255, 0.08);
+    }
+
+    50% {
+        border-color:
+            rgba(237, 49, 88, 0.4);
+    }
+}
+
+
+/* Terminal Top */
+
+.terminal-top {
+    display: flex;
+
+    gap: 5px;
+
+    margin-bottom: 12px;
+}
+
+.terminal-top span {
+    width: 7px;
+    height: 7px;
+
+    border-radius: 50%;
+
+    background: #444;
+}
+
+.terminal-content p {
+    margin: 7px 0;
+
+    color: #aaa;
+}
+
+.green {
+    color: #61ff9a;
+}
+
+.red {
+    color: #ff5370 !important;
+
+    font-weight: bold;
+}
+
+
+/* Loading */
+
+.loading {
+    display: flex;
+
+    gap: 5px;
+}
+
+.loading span {
+    width: 5px;
+    height: 5px;
+
+    background: var(--pink);
+
+    border-radius: 50%;
+
+    animation:
+        loadingDots 1s infinite;
+}
+
+.loading span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.loading span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes loadingDots {
+
+    0%,
+    100% {
+        opacity: 0.2;
+
+        transform:
+            translateY(0);
+    }
+
+    50% {
+        opacity: 1;
+
+        transform:
+            translateY(-4px);
+    }
+}
+
+
+/* Screen Code */
+
+.screen-code {
+    position: absolute;
+
+    right: 25px;
+    bottom: 25px;
+
+    font-family: monospace;
+
+    color:
+        rgba(237, 49, 88, 0.35);
+
+    font-size: 22px;
+
+    transform:
+        rotate(-10deg);
+
+    /* user-select: none; */
+}
+
+
+/* =====================================================
+   11. MONITOR STAND
+===================================================== */
+
+.monitor-stand {
+    width: 55px;
+    height: 60px;
+
+    margin: auto;
+
+    background:
+        linear-gradient(
+            90deg,
+            #181a20,
+            #30333b,
+            #15161a
+        );
+}
+
+.monitor-base {
+    width: 150px;
+    height: 12px;
+
+    margin:
+        -2px auto 0;
+
+    border-radius: 20px;
+
+    background: #292c34;
+
+    box-shadow:
+        0 10px 20px
+        rgba(0, 0, 0, 0.5);
+}
+
+
+/* =====================================================
+   12. KEYBOARD
+===================================================== */
+
+.keyboard {
+    width: 300px;
+    height: 70px;
+
+    margin:
+        15px auto 0;
+
+    padding: 10px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(5, 1fr);
+
+    gap: 6px;
+
+    transform:
+        perspective(250px)
+        rotateX(25deg);
+
+    border-radius: 10px;
+
+    background: #181a20;
+
+    box-shadow:
+        0 20px 35px
+        rgba(0, 0, 0, 0.45);
+}
+
+.keyboard span {
+    height: 12px;
+
+    border-radius: 3px;
+
+    background: #32353d;
+
+    transition:
+        0.3s ease;
+}
+
+.keyboard span:hover {
+    background: var(--pink);
+
+    box-shadow:
+        0 0 10px
+        var(--pink);
+}
+
+
+/* =====================================================
+   13. FOOTER
+===================================================== */
+
+.error-footer {
+    position: relative;
+
+    z-index: 3;
+
+    width: 100%;
+
+    min-height: 70px;
+
+    padding:
+        16px 7%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+
+    border-top:
+        1px solid
+        var(--border);
+
+    color: #777;
+
+    font-size: 12px;
+}
+
+.error-footer strong {
+    color: var(--pink);
+}
+
+
+/* Social Icons */
+
+.social-icons {
+    display: flex;
+
+    gap: 10px;
+}
+
+.social-icons a {
+    width: 35px;
+    height: 35px;
+
+    display: grid;
+
+    place-items: center;
+
+    color: #aaa;
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius: 50%;
+
+    text-decoration: none;
+
+    transition:
+        0.3s ease;
+}
+
+.social-icons a:hover {
+    color: var(--white);
+
+    background: var(--pink);
+
+    border-color: var(--pink);
+
+    transform:
+        translateY(-4px);
+}
+
+
+/* =====================================================
+   14. LARGE TABLET
+===================================================== */
+
+@media (max-width: 1100px) {
+
+    .error-page {
+        gap: 40px;
+
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .computer-wrapper {
+        width: 420px;
+        min-width: 420px;
+    }
+
+    .monitor {
+        width: 350px;
+        height: 235px;
+    }
+
+    .terminal {
+        left: 20px;
+        top: 20px;
+
+        width: 235px;
+    }
+
+    .keyboard {
+        width: 280px;
+    }
+}
+
+
+/* =====================================================
+   15. TABLET
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .error-header {
+        padding:
+            15px 5%;
+    }
+
+    .error-page {
+        /* min-height: auto; */
+
+        padding:
+            60px 5% 70px;
+
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 70px;
+    }
+
+    .error-content {
+        max-width: 650px;
+    }
+
+    .error-icon {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .error-text {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .error-buttons {
+        justify-content: center;
+    }
+
+    .computer-wrapper {
+        width: 470px;
+        min-width: 470px;
+    }
+}
+
+
+/* =====================================================
+   16. MOBILE
+===================================================== */
+
+@media (max-width: 796px) {
+
+    .error-header {
+        min-height: 75px;
+
+        padding:
+            12px 5%;
+    }
+
+    .error-header .logo-icon {
+        width: 125px;
+        height: 55px;
+    }
+
+    .home-link {
+        padding:
+            9px 14px;
+
+        font-size: 12px;
+    }
+
+    .error-page {
+        padding:
+            50px 5% 60px;
+
+        gap: 55px;
+    }
+
+    .error-label {
+        font-size: 10px;
+
+        letter-spacing: 3px;
+    }
+
+    .error-content h1 {
+        font-size: 110px;
+
+        letter-spacing: -8px;
+
+        margin-left: -6px;
+    }
+
+    .error-content h2 {
+        font-size: 25px;
+    }
+
+    .error-text {
+        font-size: 14px;
+    }
+
+    .computer-wrapper {
+        width: 100%;
+
+        min-width: 0;
+
+        transform:
+            scale(0.85);
+    }
+
+    .error-footer {
+        flex-direction: column;
+
+        justify-content: center;
+
+        text-align: center;
+
+        gap: 15px;
+
+        padding:
+            20px 5%;
+    }
+}
+
+
+/* =====================================================
+   17. SMALL MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .error-header .logo-icon {
+        width: 110px;
+        height: 50px;
+    }
+
+    .home-link {
+        padding:
+            8px 12px;
+    }
+
+    .home-link span {
+        display: none;
+    }
+
+    .error-page {
+        padding:
+            45px 20px 55px;
+
+        gap: 40px;
+    }
+
+    .error-icon {
+        width: 55px;
+        height: 55px;
+
+        font-size: 22px;
+    }
+
+    .error-content h1 {
+        font-size: 95px;
+
+        letter-spacing: -7px;
+    }
+
+    .error-content h2 {
+        font-size: 23px;
+
+        margin-top: 25px;
+    }
+
+    .error-text {
+        font-size: 13px;
+
+        line-height: 1.7;
+    }
+
+    .error-buttons {
+        width: 100%;
+
+        flex-direction: column;
+
+        gap: 12px;
+    }
+
+    .primary-btn,
+    .secondary-btn {
+        width: 100%;
+
+        justify-content: center;
+    }
+
+    .computer-wrapper {
+        transform:
+            scale(0.72);
+
+        margin-top: -25px;
+
+        margin-bottom: -55px;
+    }
+
+    .error-footer {
+        padding:
+            20px;
+    }
+}
+
+
+/* =====================================================
+   18. VERY SMALL MOBILE
+===================================================== */
+
+@media (max-width: 480px) {
+
+    .error-header {
+        padding:
+            10px 18px;
+    }
+
+    .error-header .logo-icon {
+        width: 100px;
+        height: 45px;
+    }
+
+    .error-page {
+        padding:
+            40px 16px 45px;
+    }
+
+    .error-label {
+        font-size: 9px;
+
+        letter-spacing: 2.5px;
+    }
+
+    .error-content h1 {
+        font-size: 78px;
+
+        letter-spacing: -6px;
+    }
+
+    .error-content h2 {
+        font-size: 21px;
+    }
+
+    .error-text {
+        font-size: 12px;
+    }
+
+    .computer-wrapper {
+        transform:
+            scale(0.60);
+
+        margin-top: -40px;
+
+        margin-bottom: -75px;
+    }
+
+    .error-footer {
+        font-size: 11px;
+    }
+
+    .social-icons a {
+        width: 33px;
+        height: 33px;
+    }
+}
+
+
+/* =====================================================
+   19. EXTRA SMALL DEVICES
+===================================================== */
+
+@media (max-width: 360px) {
+
+    .error-header .logo-icon {
+        width: 90px;
+        height: 42px;
+    }
+
+    .error-content h1 {
+        font-size: 68px;
+
+        letter-spacing: -5px;
+    }
+
+    .error-content h2 {
+        font-size: 19px;
+    }
+
+    .computer-wrapper {
+        transform:
+            scale(0.52);
+
+        margin-bottom: -95px;
+    }
+
+    .error-page {
+        gap: 25px;
+    }
+}
+
+
+/* =====================================================
+   20. REDUCED MOTION
+===================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
