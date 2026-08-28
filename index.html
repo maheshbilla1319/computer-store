@@ -1,0 +1,2526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TechNova - Computer Store</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+
+<body>
+
+
+
+    
+     <!-- =====================================================
+     HEADER / NAVBAR
+====================================================== -->
+<header class="site-header" id="header">
+<div class="container header-container">
+
+    <!-- ================= LOGO ================= -->
+    <a href="index.html" class="site-logo" aria-label="TechNova Home">
+
+        <img
+            src="./css/assets/image-12.webp"
+            alt=""
+            class="logo-image"
+        >
+
+    </a>
+
+
+
+
+        <!-- ================= NAVIGATION ================= -->
+        <nav class="navbar" id="navbar">
+ <a href="index.html" class="nav-link ">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+            </a>
+
+            <a href="about.html" class="nav-link">
+                <i class="fa-solid fa-box"></i>
+                <span>About</span>
+            </a>
+
+            <a href="services.html" class="nav-link">
+                <i class="fa-solid fa-layer-group"></i>
+                <span>Services</span>
+            </a>
+
+            <a href="blog.html" class="nav-link">
+                <i class="fa-solid fa-circle-info"></i>
+                <span>Blog</span>
+            </a>
+
+            <a href="contact.html" class="nav-link">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <span>Contact</span>
+            </a>
+
+            <!-- Mobile Login -->
+            <a href="signup.html" class="mobile-login-btn">
+                <i class="fa-solid fa-right-to-bracket"></i>
+                <span>Login</span>
+            </a>
+
+        </nav>
+
+
+        <!-- ================= RIGHT ACTIONS ================= -->
+        <div class="header-actions">
+
+            <!-- Search -->
+           <button
+    class="icon-btn"
+    id="searchBtn"
+    type="button"
+    aria-label="Search"
+    onclick="window.location.href='404.html'">
+
+    <i class="fa-solid fa-magnifying-glass"></i>
+
+</button>
+
+            <!-- Cart -->
+          <button
+    class="icon-btn cart-btn"
+    id="cartBtn"
+    type="button"
+    aria-label="Shopping Cart"
+    onclick="window.location.href='404.html'">
+
+    <i class="fa-solid fa-cart-shopping"></i>
+
+    <span class="cart-count" id="cartCount">
+        0
+    </span>
+
+</button>
+
+
+            <!-- Desktop Login -->
+            <a href="login.html" class="login-btn">
+                <i class="fa-solid fa-user"></i>
+                <span>Login</span>
+            </a>
+
+
+            <!-- Mobile Menu -->
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="navbar"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+<!-- ================= 1. COMPUTER STORE HERO ================= -->
+<section class="hero computer-hero" id="home">
+
+    <!-- Animated Background -->
+    <div class="hero-bg">
+
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+
+        <div class="aurora-sweep"></div>
+        <div class="grid-overlay"></div>
+
+        <!-- Particles -->
+        <div class="hero-particle-scene" aria-hidden="true">
+
+            <span class="particle p-1"></span>
+            <span class="particle p-2"></span>
+            <span class="particle p-3"></span>
+            <span class="particle p-4"></span>
+            <span class="particle p-5"></span>
+            <span class="particle p-6"></span>
+            <span class="particle p-7"></span>
+            <span class="particle p-8"></span>
+
+            <span class="spark sp-1"></span>
+            <span class="spark sp-2"></span>
+            <span class="spark sp-3"></span>
+            <span class="spark sp-4"></span>
+
+        </div>
+
+    </div>
+
+    <div class="hero-vignette"></div>
+
+
+    <!-- ================= HERO CONTENT ================= -->
+    <div class="hero-inner">
+
+        <!-- LEFT CONTENT -->
+        <div class="hero-copy">
+
+            <p class="eyebrow" data-aos="fade-up">
+                <i class="fa-solid fa-microchip"></i>
+                NEXT GENERATION COMPUTER STORE
+            </p>
+
+            <h1 data-aos="fade-up" data-aos-delay="100">
+                Power Your Stackly
+                <span class="text-accent">Digital World.</span>
+            </h1>
+
+            <p class="hero-sub" data-aos="fade-up" data-aos-delay="200">
+                Discover high-performance laptops, powerful desktops,
+                gaming PCs, premium monitors and the latest computer
+                accessories built for work, gaming and creativity.
+            </p>
+
+
+            <!-- BUTTONS -->
+            <div class="hero-cta"
+                 data-aos="fade-up"
+                 data-aos-delay="300">
+
+                <a href="404.html" class="btn btn-primary">
+                    <span>Shop Computers</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <a href="404.html" class="btn btn-ghost">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span>Explore Products</span>
+                </a>
+
+            </div>
+
+
+            <!-- STATS -->
+            <div class="hero-stats"
+                 data-aos="fade-up"
+                 data-aos-delay="400">
+
+                <div>
+                    <strong data-count="2500">250k</strong>
+                    <span>Happy Customers</span>
+                </div>
+
+                <div>
+                    <strong data-count="500">20M</strong>
+                    <span>Products</span>
+                </div>
+
+                <div>
+                    <strong data-count="24">10Year</strong>
+                    <span>Month Warranty</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= PRODUCT DISPLAY ================= -->
+        <div class="hero-orbit" id="heroOrbit">
+
+            <div class="orbit-ring ring-1"></div>
+            <div class="orbit-ring ring-2"></div>
+
+
+            <!-- MAIN COMPUTER IMAGE -->
+            <div class="orbit-center">
+
+                <div class="product-glow"></div>
+
+                <img
+                    src="css/assets/image-1.webp"
+                    alt="Premium Computer Setup"
+                    loading="eager">
+
+            </div>
+
+
+            <!-- LAPTOP -->
+            <div class="orbit-item item-1">
+
+                <img
+                    src="css/assets/image-10.webp"
+                    alt="Premium Laptop"
+                    loading="lazy">
+
+            </div>
+
+
+            <!-- GAMING COMPUTER -->
+            <div class="orbit-item item-2">
+
+                <img
+                    src="css/assets/image-14.webp"
+                    alt="Gaming Computer"
+                    loading="lazy">
+
+            </div>
+
+
+            <!-- MONITOR -->
+            <div class="orbit-item item-3">
+
+                <img
+                    src="css/assets/image-4.webp"
+                    alt="Computer Monitor"
+                    loading="lazy">
+
+            </div>
+
+
+            <!-- KEYBOARD -->
+            <div class="orbit-item item-4">
+
+                <img
+                    src="css/assets/image-5.webp"
+                    alt="Gaming Keyboard"
+                    loading="lazy">
+
+            </div>
+
+
+            <!-- FLOAT CARD 1 -->
+            <div class="float-card card-a">
+
+                <div class="float-icon">
+                    <i class="fa-solid fa-bolt-lightning"></i>
+                </div>
+
+                <div>
+                    <strong>RTX 40</strong>
+                    <span>Gaming Power</span>
+                </div>
+
+            </div>
+
+
+            <!-- FLOAT CARD 2 -->
+            <div class="float-card card-b">
+
+                <div class="float-icon">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+
+                <div>
+                    <strong>3 Years</strong>
+                    <span>Warranty Support</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- SCROLL -->
+    <a href="404.html" class="scroll-cue">
+
+        <span></span>
+
+        Scroll
+
+    </a>
+
+</section>
+<!-- =========================================================
+     2. COMPUTER CATEGORIES
+========================================================= -->
+
+<section class="computer-categories" id="categories">
+
+    <div class="category-bg-shape shape-one"></div>
+    <div class="category-bg-shape shape-two"></div>
+
+    <div class="section-heading category-heading">
+
+        <span class="section-mini-title">
+            <i class="fa-solid fa-microchip"></i>
+            EXPLORE TECHNOLOGY
+        </span>
+
+        <h2>
+            Find Your Stackly
+            <strong>Perfect Setup</strong>
+        </h2>
+
+        <p>
+            Powerful computers, gaming machines and premium accessories
+            designed for work, creativity and entertainment.
+        </p>
+
+    </div>
+
+
+    <!-- ================= CATEGORY CARDS ================= -->
+
+    <div class="computer-category-grid">
+
+        <!-- LAPTOP -->
+        <article class="computer-category-card category-blue">
+
+            <div class="category-number">01</div>
+
+            <div class="category-content">
+
+                <span>
+                    <i class="fa-solid fa-laptop"></i>
+                    LAPTOPS
+                </span>
+
+                <h3>
+                    Power On
+                    <br>
+                    <strong>Everywhere.</strong>
+                </h3>
+
+                <p>
+                    Lightweight laptops with powerful performance
+                    for work, study and creativity.
+                </p>
+
+                <a href="404.html">
+                    Explore Laptops
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+
+            <div class="category-image-wrap">
+
+                <div class="category-image-glow"></div>
+
+                <img
+                    src="css/assets/image-27.webp"
+                    alt="Premium Laptop">
+
+            </div>
+
+        </article>
+
+
+        <!-- GAMING -->
+        <article class="computer-category-card category-purple">
+
+            <div class="category-number">02</div>
+
+            <div class="category-content">
+
+                <span>
+                    <i class="fa-solid fa-gamepad"></i>
+                    GAMING
+                </span>
+
+                <h3>
+                    Play Without
+                    <br>
+                    <strong>Limits.</strong>
+                </h3>
+
+                <p>
+                    High-performance gaming PCs built for
+                    competitive gaming and immersive experiences.
+                </p>
+
+                <a href="404.html">
+                    Explore Gaming
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+
+            <div class="category-image-wrap">
+
+                <div class="category-image-glow"></div>
+
+                <img
+                    src="css/assets/image-14.webp"
+                    alt="Gaming Computer">
+
+            </div>
+
+        </article>
+
+
+        <!-- MONITOR -->
+        <article class="computer-category-card category-cyan">
+
+            <div class="category-number">03</div>
+
+            <div class="category-content">
+
+                <span>
+                    <i class="fa-solid fa-display"></i>
+                    MONITORS
+                </span>
+
+                <h3>
+                    See Every
+                    <br>
+                    <strong>Detail.</strong>
+                </h3>
+
+                <p>
+                    Ultra-clear displays with vibrant colors
+                    for gaming, design and productivity.
+                </p>
+
+                <a href="404.html">
+                    Explore Monitors
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+
+            <div class="category-image-wrap">
+
+                <div class="category-image-glow"></div>
+
+                <img
+                    src="css/assets/img21.webp"
+                    alt="Computer Monitor">
+
+            </div>
+
+        </article>
+
+
+        <!-- ACCESSORIES -->
+        <article class="computer-category-card category-orange">
+
+            <div class="category-number">04</div>
+
+            <div class="category-content">
+
+                <span>
+                    <i class="fa-solid fa-keyboard"></i>
+                    ACCESSORIES
+                </span>
+
+                <h3>
+                    Complete
+                    <br>
+                    <strong>Your Desk.</strong>
+                </h3>
+
+                <p>
+                    Keyboards, mice, headphones and essential
+                    accessories for your ultimate setup.
+                </p>
+
+                <a href="404.html">
+                    Explore Accessories
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+
+            <div class="category-image-wrap">
+
+                <div class="category-image-glow"></div>
+
+                <img
+                    src="css/assets/image-24.webp"
+                    alt="Computer Accessories">
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     PRODUCT IMAGE MARQUEE
+========================================================= -->
+
+<section class="tech-marquee">
+
+    <div class="marquee-heading">
+        <span>POWERED BY TECHNOLOGY</span>
+    </div>
+
+
+    <div class="marquee-wrapper">
+
+        <div class="marquee-track">
+
+            <!-- SET 1 -->
+
+            <div class="marquee-product">
+                <img
+                    src="css/assets/image-13.webp"
+                    alt="Laptop">
+            </div>
+
+            <div class="marquee-product">
+                <img
+                    src="css/assets/image-15.webp"
+                    alt="Gaming PC">
+            </div>
+
+            <div class="marquee-product">
+                <img
+                    src="css/assets/img15.webp"
+                    alt="Monitor">
+            </div>
+
+            <div class="marquee-product">
+                <img
+                    src="css/assets/img5.webp"
+                    alt="Keyboard">
+            </div>
+
+            <div class="marquee-product">
+                <img
+                    src="css/assets/img22.webp"
+                    alt="Gaming Mouse">
+            </div>
+
+            <div class="marquee-product">
+                <img
+                    src="css/assets/image-3.webp"
+                    alt="Headphones">
+            </div>
+
+
+            <!-- SET 2 - DUPLICATE FOR INFINITE LOOP -->
+
+            <div class="marquee-product">
+                <img
+                    src="css/assets/img4.webp"
+                    alt="Laptop">
+            </div>
+
+            <div class="marquee-product">
+                <img
+                    src="css/assets/image-23.webp"
+                    alt="Gaming PC">
+            </div>
+
+            <div class="marquee-product">
+                <img
+                    src="css/assets/img6.webp"
+                    alt="Monitor">
+            </div>
+
+            <div class="marquee-product">
+                <img
+                    src="css/assets/img21.webp"
+                    alt="Keyboard">
+            </div>
+
+            <div class="marquee-product">
+                <img
+                    src="css/assets/img15.webp"
+                    alt="Gaming Mouse">
+            </div>
+
+            <div class="marquee-product">
+                <img
+                    src="css/assets/image-3.webp"
+                    alt="Headphones">
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     3. FEATURED PRODUCTS
+========================================================= -->
+
+<section class="featured-products" id="products">
+
+    <div class="products-bg-circle circle-one"></div>
+    <div class="products-bg-circle circle-two"></div>
+
+    <div class="section-heading">
+
+        <span class="section-mini-title">
+            <i class="fa-solid fa-fire"></i>
+            TRENDING NOW
+        </span>
+
+        <h2>
+            Best Selling
+            <strong>Products</strong>
+        </h2>
+
+        <p>
+            Upgrade your setup with our most popular technology products.
+        </p>
+
+    </div>
+
+
+    <div class="featured-product-grid">
+
+
+        <!-- PRODUCT 1 -->
+        <article class="featured-product-card">
+
+            <div class="featured-image blue-image">
+
+                <span class="product-label">NEW</span>
+
+               <button
+    class="product-heart"
+    type="button"
+    onclick="window.location.href='404.html'"
+    aria-label="Add to wishlist">
+
+    <i class="fa-regular fa-heart"></i>
+
+</button>
+
+                <img
+                    src="css/assets/image-5.webp"
+                    alt="Premium Laptop">
+
+            </div>
+
+
+            <div class="featured-info">
+
+                <span>LAPTOP</span>
+
+                <h3>Stackly Pro Laptop</h3>
+
+                <p>
+                    High-performance laptop for professionals.
+                </p>
+
+                <div class="featured-bottom">
+
+                    <strong>₹69,999</strong>
+
+                   
+              <button
+    type="button"
+    class="cart-button"
+    onclick="window.location.href='404.html'"
+    aria-label="Add to cart">
+
+    <i class="fa-solid fa-cart-plus"></i>
+
+</button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- PRODUCT 2 -->
+        <article class="featured-product-card">
+
+            <div class="featured-image purple-image">
+
+                <span class="product-label sale-label">
+                    SALE
+                </span>
+
+              <button
+    class="product-heart"
+    type="button"
+    onclick="window.location.href='404.html'"
+    aria-label="Add to wishlist">
+
+    <i class="fa-regular fa-heart"></i>
+
+</button>
+
+                <img
+                    src="css/assets/image-15.webp"
+                    alt="Gaming PC">
+
+            </div>
+
+
+            <div class="featured-info">
+
+                <span>GAMING PC</span>
+
+                <h3>Stackly Gaming Beast</h3>
+
+                <p>
+                    Extreme gaming performance with powerful graphics.
+                </p>
+
+                <div class="featured-bottom">
+
+                    <strong>₹1,29,999</strong>
+
+              <button
+    type="button"
+    class="cart-button"
+    onclick="window.location.href='404.html'"
+    aria-label="Add to cart">
+
+    <i class="fa-solid fa-cart-plus"></i>
+
+</button>
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- PRODUCT 3 -->
+        <article class="featured-product-card">
+
+            <div class="featured-image cyan-image">
+
+                <span class="product-label pro-label">
+                    PRO
+                </span>
+
+        <button
+    class="product-heart"
+    type="button"
+    onclick="window.location.href='404.html'"
+    aria-label="Add to wishlist">
+
+    <i class="fa-regular fa-heart"></i>
+
+</button>
+
+                <img
+                    src="css/assets/image-27.webp"
+                    alt="Premium Monitor">
+
+            </div>
+
+
+            <div class="featured-info">
+
+                <span>MONITOR</span>
+
+                <h3>Stackly Ultra Display</h3>
+
+                <p>
+                    Stunning visuals with ultra-clear 4K display.
+                </p>
+
+                <div class="featured-bottom">
+
+                    <strong>₹34,999</strong>
+
+                   
+              <button
+    type="button"
+    class="cart-button"
+    onclick="window.location.href='404.html'"
+    aria-label="Add to cart">
+
+    <i class="fa-solid fa-cart-plus"></i>
+
+</button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- PRODUCT 4 -->
+        <article class="featured-product-card">
+
+            <div class="featured-image orange-image">
+
+                <span class="product-label hot-label">
+                    HOT
+                </span>
+
+        <button
+    class="product-heart"
+    type="button"
+    onclick="window.location.href='404.html'"
+    aria-label="Add to wishlist">
+
+    <i class="fa-regular fa-heart"></i>
+
+</button>
+
+
+                <img
+                    src="css/assets/img5.webp"
+                    alt="Gaming Keyboard">
+
+            </div>
+
+
+            <div class="featured-info">
+
+                <span>ACCESSORY</span>
+
+                <h3>RGB Mechanical Keyboard</h3>
+
+                <p>
+                    Fast response with customizable RGB lighting.
+                </p>
+
+                <div class="featured-bottom">
+
+                    <strong>₹4,999</strong>
+
+                   
+              <button
+    type="button"
+    class="cart-button"
+    onclick="window.location.href='404.html'"
+    aria-label="Add to cart">
+
+    <i class="fa-solid fa-cart-plus"></i>
+
+</button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+<!-- =====================================================
+     5. OFFER / DEAL SECTION
+====================================================== -->
+
+<section class="offer-section" id="offers">
+
+    <!-- Background Effects -->
+    <div class="offer-orb offer-orb-one"></div>
+    <div class="offer-orb offer-orb-two"></div>
+
+    <div class="offer-grid"></div>
+
+    <div class="container">
+
+        <div class="offer-content">
+
+
+            <!-- =========================================
+                 LEFT CONTENT
+            ========================================== -->
+
+            <div class="offer-text">
+
+                <span class="offer-tag">
+                    <i class="fa-solid fa-bolt"></i>
+                     STACKLY LIMITED TIME OFFER
+                </span>
+
+
+                <h2>
+                    Power Up Your
+                    <span>STACKLY Performance</span>
+                </h2>
+
+
+                <p>
+                    Upgrade your gaming setup with powerful
+                    performance and next-generation technology.
+                    Grab exclusive deals before they disappear.
+                </p>
+
+
+                <!-- Discount Box -->
+
+                <div class="discount-box">
+
+                    <div class="discount-number">
+                        40
+                        <small>%</small>
+                    </div>
+
+                    <div class="discount-text">
+                        <strong>OFF</strong>
+                        <span>SELECTED PRODUCTS</span>
+                    </div>
+
+                </div>
+
+
+                <!-- Price -->
+
+                <div class="offer-price">
+
+                    <span>Starting From</span>
+
+                    <strong>
+                        ₹59,999
+                    </strong>
+
+                    <del>
+                        ₹99,999
+                    </del>
+
+                </div>
+
+
+                <!-- Countdown -->
+
+                <div class="deal-timer">
+
+                    <div class="timer-box">
+                        <strong id="offerDays">02</strong>
+                        <span>DAYS</span>
+                    </div>
+
+                    <div class="timer-colon">:</div>
+
+                    <div class="timer-box">
+                        <strong id="offerHours">18</strong>
+                        <span>HOURS</span>
+                    </div>
+
+                    <div class="timer-colon">:</div>
+
+                    <div class="timer-box">
+                        <strong id="offerMinutes">45</strong>
+                        <span>MIN</span>
+                    </div>
+
+                    <div class="timer-colon">:</div>
+
+                    <div class="timer-box">
+                        <strong id="offerSeconds">30</strong>
+                        <span>SEC</span>
+                    </div>
+
+                </div>
+
+
+                <!-- Button -->
+
+                <a href="404.html" class="offer-btn">
+
+                    <span>
+                        Grab The Deal
+                    </span>
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+
+                <!-- Trust -->
+
+                <div class="offer-trust">
+
+                    <div>
+                        <i class="fa-solid fa-shield-halved"></i>
+                        Secure Payment
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-truck-fast"></i>
+                        Fast Delivery
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =========================================
+                 RIGHT IMAGE
+            ========================================== -->
+
+            <div class="offer-image">
+
+                <!-- Glow -->
+
+                <div class="pc-glow"></div>
+
+
+                <!-- Rotating Ring -->
+
+                <div class="pc-ring ring-one"></div>
+
+                <div class="pc-ring ring-two"></div>
+
+
+                <!-- Gaming PC -->
+
+                <img
+                    src="css/assets/img24.webp"
+                    alt="Gaming PC"
+                >
+
+
+                <!-- Floating Discount -->
+
+                <div class="floating-discount">
+
+                    <span>UP TO</span>
+
+                    <strong>
+                        40%
+                    </strong>
+
+                    <small>OFF</small>
+
+                </div>
+
+
+                <!-- Floating Gaming Card -->
+
+                <div class="floating-spec">
+
+                    <i class="fa-solid fa-microchip"></i>
+
+                    <div>
+                        <strong>
+                            RTX GAMING
+                        </strong>
+
+                        <span>
+                            Next Gen Performance
+                        </span>
+                    </div>
+
+                </div>
+
+
+                <!-- Floating Rating -->
+
+                <div class="floating-rating">
+
+                    <div class="rating-stars">
+
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+
+                    </div>
+
+                    <span>
+                        4.9/5 Rating
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =====================================================
+     6. ABOUT SECTION
+===================================================== -->
+
+<section class="about-section" id="about">
+
+    <!-- Background -->
+    <div class="about-bg-circle about-bg-one"></div>
+    <div class="about-bg-circle about-bg-two"></div>
+    <div class="about-grid"></div>
+
+    <div class="about-container">
+
+        <!-- ================= ABOUT IMAGE ================= -->
+
+        <div class="about-image">
+
+            <div class="about-image-frame">
+
+                <span class="image-line line-one"></span>
+                <span class="image-line line-two"></span>
+
+                <img
+                    src="css/assets/img25.webp"
+                    alt="TechNova Computer Store"
+                >
+
+            </div>
+
+            <!-- Experience -->
+            <div class="experience-card">
+
+                <strong>10+</strong>
+
+                <span>
+                    Years Experience
+                </span>
+
+            </div>
+
+            <!-- Trusted -->
+            <div class="about-floating-badge">
+
+                <div class="badge-icon">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+
+                <div class="badge-text">
+
+                    <strong>100%</strong>
+
+                    <span>
+                        Trusted
+                    </span>
+
+                </div>
+
+            </div>
+
+            <!-- Dots -->
+            <div class="about-dots"></div>
+
+            <!-- Floating Icons -->
+            <div class="floating-tech-icon tech-one">
+                <i class="fa-solid fa-laptop"></i>
+            </div>
+
+            <div class="floating-tech-icon tech-two">
+                <i class="fa-solid fa-microchip"></i>
+            </div>
+
+        </div>
+
+
+        <!-- ================= ABOUT CONTENT ================= -->
+
+        <div class="about-content">
+
+            <span class="section-tag">
+
+                <i class="fa-solid fa-bolt"></i>
+
+               STACKLY ABOUT TECHNOVA
+
+            </span>
+
+            <h2>
+
+                Technology That
+
+                <span>
+                    Moves You Forward
+                </span>
+
+            </h2>
+
+            <p class="about-description">
+
+                Stackly is your trusted destination for computers,
+                laptops, gaming systems and technology accessories.
+                We bring modern technology closer to you with
+                quality products and expert service.
+
+            </p>
+
+            <p class="about-description second">
+
+                From everyday computing to powerful gaming systems,
+                our team helps you choose the right technology for
+                your needs at competitive prices.
+
+            </p>
+
+
+            <!-- Features -->
+
+            <div class="about-list">
+
+                <div class="about-feature">
+
+                    <div class="about-check">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Genuine Products
+                        </strong>
+
+                        <span>
+                            100% original technology products
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="about-feature">
+
+                    <div class="about-check">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Trusted Brands
+                        </strong>
+
+                        <span>
+                            Premium brands you can trust
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="about-feature">
+
+                    <div class="about-check">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Expert Technical Support
+                        </strong>
+
+                        <span>
+                            Professional support whenever needed
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="about-feature">
+
+                    <div class="about-check">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Easy Returns
+                        </strong>
+
+                        <span>
+                            Simple and customer-friendly returns
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Button -->
+
+            <a
+                href="404.html"
+                class="about-btn"
+            >
+
+                <span>
+                    Learn More
+                </span>
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     SERVICES - MOVING SCROLL DESIGN
+===================================================== -->
+
+<section class="tech-services" id="services">
+
+    <!-- BACKGROUND -->
+    <div class="tech-bg">
+        <span class="bg-circle circle-one"></span>
+        <span class="bg-circle circle-two"></span>
+        <span class="bg-circle circle-three"></span>
+        <div class="tech-grid"></div>
+    </div>
+
+
+    <div class="tech-container">
+
+        <!-- ================= HEADING ================= -->
+
+        <div class="tech-heading">
+
+            <span class="tech-tag">
+                <i class="fa-solid fa-microchip"></i>
+                STACKLY TECHNOLOGY
+            </span>
+
+            <h2>
+                Complete
+                <span>Computer Services</span>
+            </h2>
+
+            <p>
+                From computer repair to custom PC building,
+                get everything you need for a powerful digital experience.
+            </p>
+
+        </div>
+
+
+        <!-- ================= MAIN AREA ================= -->
+
+        <div class="tech-layout">
+
+
+            <!-- =========================================
+                 LEFT IMAGE
+            ========================================== -->
+
+            <div class="tech-image-area">
+
+                <div class="image-glow"></div>
+
+                <div class="tech-image-box">
+
+                    <img
+                        src="css/assets/img18.webp"
+                        alt="Computer Store Services"
+                    >
+
+                    <div class="tech-image-overlay"></div>
+
+                    <div class="image-text">
+
+                        <span>STACKLY STORE</span>
+
+                        <h3>
+                            Technology<br>
+                            You Can Trust.
+                        </h3>
+
+                        <p>
+                            Professional computer solutions
+                            for work, gaming and business.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FLOAT CARD -->
+
+                <div class="image-float float-one">
+
+                    <i class="fa-solid fa-bolt"></i>
+
+                    <div>
+                        <strong>Fast Service</strong>
+                        <span>Quick Solutions</span>
+                    </div>
+
+                </div>
+
+
+                <div class="image-float float-two">
+
+                    <i class="fa-solid fa-shield-halved"></i>
+
+                    <div>
+                        <strong>Trusted Support</strong>
+                        <span>Expert Team</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================================
+                 RIGHT MOVING SERVICES
+            ========================================== -->
+
+            <div class="moving-services">
+
+
+                <!-- SERVICE 01 -->
+
+                <article class="moving-card service-blue">
+
+                    <div class="moving-number">
+                        01
+                    </div>
+
+                    <div class="moving-icon">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                    </div>
+
+                    <div class="moving-content">
+
+                        <span>COMPUTER SERVICE</span>
+
+                        <h3>
+                            Computer Repair
+                        </h3>
+
+                        <p>
+                            Professional hardware and software
+                            repair to keep your system fast,
+                            reliable and secure.
+                        </p>
+
+                        <a href="404.html">
+                            Learn More
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- SERVICE 02 -->
+
+                <article class="moving-card service-purple">
+
+                    <div class="moving-number">
+                        02
+                    </div>
+
+                    <div class="moving-icon">
+                        <i class="fa-solid fa-microchip"></i>
+                    </div>
+
+                    <div class="moving-content">
+
+                        <span>BUILD YOUR PC</span>
+
+                        <h3>
+                            Custom PC Building
+                        </h3>
+
+                        <p>
+                            Powerful custom computers designed
+                            for gaming, business and professional
+                            performance.
+                        </p>
+
+                        <a href="404.html">
+                            Learn More
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- SERVICE 03 -->
+
+                <article class="moving-card service-cyan">
+
+                    <div class="moving-number">
+                        03
+                    </div>
+
+                    <div class="moving-icon">
+                        <i class="fa-solid fa-cloud"></i>
+                    </div>
+
+                    <div class="moving-content">
+
+                        <span>SMART TECHNOLOGY</span>
+
+                        <h3>
+                         Stackly  Solutions
+                        </h3>
+
+                        <p>
+                            Smart IT infrastructure, cloud solutions
+                            and technology support for modern businesses.
+                        </p>
+
+                        <a href="404.html">
+                            Learn More
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- SERVICE 04 -->
+
+                <article class="moving-card service-green">
+
+                    <div class="moving-number">
+                        04
+                    </div>
+
+                    <div class="moving-icon">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+
+                    <div class="moving-content">
+
+                        <span>EXPERT  STACKLY SUPPORT</span>
+
+                        <h3>
+                            Technical Support
+                        </h3>
+
+                        <p>
+                            Get expert assistance for setup,
+                            troubleshooting, upgrades and technical issues.
+                        </p>
+
+                        <a href="404.html">
+                            Learn More
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= BOTTOM ================= -->
+
+        <div class="tech-bottom">
+
+            <div>
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Genuine Products</span>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-truck-fast"></i>
+                <span>Fast Service</span>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-user-shield"></i>
+                <span>Expert Support</span>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-shield-halved"></i>
+                <span>Trusted Warranty</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     8. REVIEWS SECTION
+====================================================== -->
+
+<section class="reviews-section" id="reviews">
+
+    <!-- Background Effects -->
+
+    <div class="review-glow review-glow-one"></div>
+    <div class="review-glow review-glow-two"></div>
+
+    <div class="container">
+
+        <!-- Heading -->
+
+        <div class="section-heading reviews-heading">
+
+            <span class="section-tag">
+                <i class="fa-solid fa-heart"></i>
+                CUSTOMER REVIEWS
+            </span>
+
+            <h2>
+                Stackly Loved By
+                <span>Our Customers</span>
+            </h2>
+
+            <p>
+                Real experiences from customers who trust TechNova.
+            </p>
+
+        </div>
+
+
+        <!-- =================================================
+             REVIEW SLIDER
+        ================================================== -->
+
+        <div class="review-slider">
+
+
+            <!-- LEFT ARROW -->
+
+            <button
+                class="review-arrow review-prev"
+                type="button"
+                aria-label="Previous review"
+            >
+                <i class="fa-solid fa-arrow-left"></i>
+            </button>
+
+
+            <!-- REVIEW CARD -->
+
+            <div class="review-card">
+
+
+                <!-- Quote -->
+
+                <div class="quote-icon">
+                    <i class="fa-solid fa-quote-left"></i>
+                </div>
+
+
+                <!-- Customer Image -->
+
+                <div class="review-image-wrap">
+
+                    <div class="review-image-ring"></div>
+
+                    <img
+                        id="reviewImage"
+                        src="css/assets/asian_11zon.webp"
+                        alt="Rahul Kumar"
+                    >
+
+                    <div class="verified-icon">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+
+                </div>
+
+
+                <!-- Stars -->
+
+                <div
+                    class="review-stars"
+                    id="reviewStars"
+                >
+                    ★★★★★
+                </div>
+
+
+                <!-- Review -->
+
+                <p
+                    class="review-text"
+                    id="reviewText"
+                >
+                    "Amazing shopping experience. The laptop quality
+                    is excellent and delivery was very fast."
+                </p>
+
+
+                <!-- User -->
+
+                <div class="review-user">
+
+                    <strong id="reviewName">
+                        Rahul Kumar
+                    </strong>
+
+                    <span id="reviewRole">
+                        Verified Customer
+                    </span>
+
+                </div>
+
+
+                <!-- Counter -->
+
+                <div class="review-counter">
+
+                    <span id="reviewCurrent">
+                        01
+                    </span>
+
+                    <div class="counter-line"></div>
+
+                    <span>
+                        03
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT ARROW -->
+
+            <button
+                class="review-arrow review-next"
+                type="button"
+                aria-label="Next review"
+            >
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+        </div>
+
+
+
+
+        
+
+        <!-- =================================================
+             DOTS
+        ================================================== -->
+
+        <div class="review-dots">
+
+            <button
+                class="review-dot active"
+                data-review="0"
+                aria-label="Review 1"
+            ></button>
+
+            <button
+                class="review-dot"
+                data-review="1"
+                aria-label="Review 2"
+            ></button>
+
+            <button
+                class="review-dot"
+                data-review="2"
+                aria-label="Review 3"
+            ></button>
+
+        </div>
+
+
+        <!-- Bottom Trust -->
+
+        <div class="review-trust">
+
+            <div class="trust-item">
+
+                <i class="fa-solid fa-star"></i>
+
+                <div>
+                    <strong>4.9/5</strong>
+                    <span>Customer Rating</span>
+                </div>
+
+            </div>
+
+
+            <div class="trust-item">
+
+                <i class="fa-solid fa-users"></i>
+
+                <div>
+                    <strong>10K+</strong>
+                    <span>Happy Customers</span>
+                </div>
+
+            </div>
+
+
+            <div class="trust-item">
+
+                <i class="fa-solid fa-shield-halved"></i>
+
+                <div>
+                    <strong>100%</strong>
+                    <span>Verified Reviews</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =====================================================
+     CONTACT SECTION - BIG IMAGE DESIGN
+====================================================== -->
+
+<section class="contact-section-new" id="contact">
+
+    <!-- Background -->
+
+    <div class="contact-bg-glow contact-glow-one"></div>
+    <div class="contact-bg-glow contact-glow-two"></div>
+
+    <div class="contact-floating contact-shape-one"></div>
+    <div class="contact-floating contact-shape-two"></div>
+
+
+    <div class="container">
+
+        <!-- Heading -->
+
+        <div class="contact-heading">
+
+            <span class="contact-tag">
+                <i class="fa-solid fa-paper-plane"></i>
+                GET IN TOUCH
+            </span>
+
+            <h2>
+                Let's Talk
+                <span>Stackly Technology</span>
+            </h2>
+
+            <p>
+                Have a question about a product, order or technical
+                support? Our team is ready to help.
+            </p>
+
+        </div>
+
+
+        <!-- =================================================
+             CONTACT MAIN
+        ================================================== -->
+
+        <div class="contact-main">
+
+
+            <!-- LEFT BIG IMAGE -->
+
+            <div class="contact-image-main">
+
+                <img
+                    src="css/assets/img18.webp"
+                    alt="TechNova Store"
+                >
+
+                <div class="image-overlay"></div>
+
+
+                <!-- Image Text -->
+
+                <div class="image-caption">
+
+                    <span>
+                        VISIT OUR STORE
+                    </span>
+
+                    <h3>
+                        Your Technology
+                        <br>
+                        Starts Here.
+                    </h3>
+
+                    <a href="404.html">
+                        Find Us
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+
+                <!-- Floating Image Icon -->
+
+                <div class="image-floating-icon">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT CONTENT -->
+
+            <div class="contact-content">
+
+
+                <!-- SMALL IMAGE -->
+
+                <div class="contact-mini-image">
+
+                    <img
+                        src="css/assets/image-c.webp"
+                        alt="Stacly Support Team"
+                    >
+
+                    <div class="mini-image-badge">
+
+                        <i class="fa-solid fa-headset"></i>
+
+                        <span>
+                            We're Online
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Contact Info -->
+
+                <div
+                    class="contact-info"
+                    id="contact-info"
+                >
+
+
+                    <!-- PHONE -->
+
+                    <a
+                        href="tel:+919876543210"
+                        class="contact-item"
+                    >
+
+                        <div class="contact-icon phone-icon">
+
+                            <i class="fa-solid fa-phone"></i>
+
+                        </div>
+
+                        <div class="contact-text">
+
+                            <span>
+                                CALL US
+                            </span>
+
+                            <strong>
+                                +91 98765 43210
+                            </strong>
+
+                            <small>
+                                Mon - Sat / 9:00 AM - 8:00 PM
+                            </small>
+
+                        </div>
+
+                        <a href="404.html" aria-label="Open contact page">
+    <i class="fa-solid fa-arrow-up-right-from-square contact-arrow"></i>
+</a>
+
+                    </a>
+
+
+                    <!-- EMAIL -->
+
+                    <a
+                        href="mailto:support@Stackly.com"
+                        class="contact-item"
+                    >
+
+                        <div class="contact-icon email-icon">
+
+                            <i class="fa-solid fa-envelope"></i>
+
+                        </div>
+
+                        <div class="contact-text">
+
+                            <span>
+                                EMAIL US
+                            </span>
+
+                            <strong>
+                                support@Stackly.com
+                            </strong>
+
+                            <small>
+                                We reply within 24 hours
+                            </small>
+
+                        </div>
+
+                       <a href="404.html" aria-label="Open contact page">
+    <i class="fa-solid fa-arrow-up-right-from-square contact-arrow"></i>
+</a>
+                    </a>
+
+
+                    <!-- LOCATION -->
+
+                    <div class="contact-item">
+
+                        <div class="contact-icon location-icon">
+
+                            <i class="fa-solid fa-location-dot"></i>
+
+                        </div>
+
+                        <div class="contact-text">
+
+                            <span>
+                                OUR LOCATION
+                            </span>
+
+                            <strong>
+                                Hyderabad, Telangana
+                            </strong>
+
+                            <small>
+                                Visit our technology store
+                            </small>
+
+                        </div>
+
+                       <a href="404.html" aria-label="Open contact page">
+    <i class="fa-solid fa-arrow-up-right-from-square contact-arrow"></i>
+</a>
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- Social -->
+
+              <div class="contact-social">
+
+    <span class="social-label">
+        FOLLOW STACKLY
+    </span>
+
+    <div class="social-icons">
+
+        <a href="404.html" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a href="404.html" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+        </a>
+
+        <a href="404.html" aria-label="X">
+            <i class="fa-brands fa-x-twitter"></i>
+        </a>
+
+        <a href="404.html" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+
+    </div>
+
+</div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             BOTTOM CONTACT STRIP
+        ================================================== -->
+
+        <div class="contact-bottom">
+
+            <div>
+
+                <i class="fa-solid fa-bolt"></i>
+
+                <span>
+                   Stackly  Fast Response
+                </span>
+
+            </div>
+
+            <div>
+
+                <i class="fa-solid fa-shield-halved"></i>
+
+                <span>
+                    Secure Communication
+                </span>
+
+            </div>
+
+            <div>
+
+                <i class="fa-solid fa-user-tie"></i>
+
+                <span>
+                    Expert Assistance
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+    </main>
+
+<!-- =====================================================
+     FUTURISTIC FOOTER
+====================================================== -->
+
+<footer class="tech-footer">
+
+    <!-- Animated Background -->
+
+    <div class="footer-glow footer-glow-one"></div>
+    <div class="footer-glow footer-glow-two"></div>
+
+    <div class="footer-grid-lines"></div>
+
+
+    <div class="container">
+
+        <!-- =================================================
+             FOOTER MAIN
+        ================================================== -->
+
+        <div class="footer-main">
+
+
+            <!-- BRAND -->
+<div class="footer-brand-new">
+
+    <a href="index.html" class="footer-logo" aria-label="TechNova Home">
+        <img 
+            src="css/assets/image-12.webp" 
+            alt=""
+            class="footer-logo-image"
+        >
+    </a>
+
+
+
+                <p>
+                    Your Stackly trusted destination for computers,
+                    laptops, gaming systems and next-generation
+                    technology solutions.
+                </p>
+
+<br>
+                <!-- Social Icons -->
+
+                <div class="footer-social">
+
+                    <a href="404.html" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="404.html" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="404.html" aria-label="X">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+
+                    <a href="404.html" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+
+                    <a href="404.html" aria-label="YouTube">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- QUICK LINKS -->
+
+            <div class="footer-links-new">
+
+                <div class="footer-title">
+
+                    <span class="title-line"></span>
+
+                    <h3>
+                        Quick Links
+                    </h3>
+
+                </div>
+
+
+                <a href="index.html">
+                    <i class="fa-solid fa-angle-right"></i>
+                    Home
+                </a>
+
+                <a href="about.html">
+                    <i class="fa-solid fa-angle-right"></i>
+                    Products
+                </a>
+
+                <a href="services.html">
+                    <i class="fa-solid fa-angle-right"></i>
+                    Categories
+                </a>
+
+                <a href="about.html">
+                    <i class="fa-solid fa-angle-right"></i>
+                    About Us
+                </a>
+
+            </div>
+
+
+            <!-- SERVICES -->
+
+            <div class="footer-links-new">
+
+                <div class="footer-title">
+
+                    <span class="title-line"></span>
+
+                    <h3>
+                        Services
+                    </h3>
+
+                </div>
+
+
+                <a href="services.html">
+                    <i class="fa-solid fa-angle-right"></i>
+                    Computer Repair
+                </a>
+
+                <a href="404.html">
+                    <i class="fa-solid fa-angle-right"></i>
+                    PC Building
+                </a>
+
+                <a href="404.html">
+                    <i class="fa-solid fa-angle-right"></i>
+                    IT Solutions
+                </a>
+
+                <a href="404.html">
+                    <i class="fa-solid fa-angle-right"></i>
+                    Technical Support
+                </a>
+
+            </div>
+
+
+            <!-- NEWSLETTER -->
+
+            <div class="footer-newsletter">
+
+                <div class="footer-title">
+
+                    <span class="title-line"></span>
+
+                    <h3>
+                        Stay Updated
+                    </h3>
+
+                </div>
+
+
+                <p>
+                    Subscribe to receive the latest technology
+                    news, products and exclusive offers.
+                </p>
+
+<form
+    class="footer-newsletter-form"
+    id="newsletterForm"
+>
+
+    <div class="newsletter-input">
+
+        <i class="fa-regular fa-envelope"></i>
+
+        <input
+            type="email"
+            id="newsletterEmail"
+            placeholder="Enter your email"
+            autocomplete="email"
+        >
+
+    </div>
+
+    <button
+        type="button"
+        class="send-btn"
+        aria-label="Send message"
+        id="sendBtn"
+    >
+        <i class="fa-solid fa-paper-plane"></i>
+        <span>Send</span>
+    </button>
+
+</form>
+
+<p
+    id="newsletterError"
+    class="newsletter-error"
+></p>
+
+
+                <div class="secure-text">
+
+                    <i class="fa-solid fa-shield-halved"></i>
+
+                    <span>
+                        Your information is secure
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             FEATURE STRIP
+        ================================================== -->
+
+        <div class="footer-feature-strip">
+
+            <div>
+
+                <i class="fa-solid fa-truck-fast"></i>
+
+                <span>
+                    Fast Delivery
+                </span>
+
+            </div>
+
+
+            <div>
+
+                <i class="fa-solid fa-shield-halved"></i>
+
+                <span>
+                    Secure Shopping
+                </span>
+
+            </div>
+
+
+            <div>
+
+                <i class="fa-solid fa-headset"></i>
+
+                <span>
+                    Expert Support
+                </span>
+
+            </div>
+
+
+            <div>
+
+                <i class="fa-solid fa-award"></i>
+
+                <span>
+                    Genuine Products
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             FOOTER BOTTOM
+        ================================================== -->
+
+        <div class="footer-bottom-new">
+
+            <p>
+                © 2026
+                <strong>Stackly</strong>.
+                All Rights Reserved.
+            </p>
+
+
+            <div class="footer-policy">
+
+                <a href="404.html">
+                    Privacy Policy
+                </a>
+
+                <span></span>
+
+                <a href="404.html">
+                    Terms & Conditions
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+    <script src="./js/script.js"></script>
+
+</body>
+</html>
