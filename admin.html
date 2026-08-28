@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>TechNova - Admin Dashboard</title>
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Admin CSS -->
+    <link
+        rel="stylesheet"
+        href="css/admin.css">
+
+</head>
+
+<body>
+
+    <!-- =================================
+         MOBILE OVERLAY
+    ================================== -->
+
+    <div
+        class="sidebar-overlay"
+        id="sidebarOverlay">
+    </div>
+
+
+    <!-- =================================
+         SIDEBAR
+    ================================== -->
+
+    <aside
+        class="sidebar"
+        id="sidebar">
+
+        <!-- LOGO -->
+
+        <div class="logo">
+
+            <a href="404.html" class="brand-logo">
+    <img
+        src="css/assets/image-12.webp"
+        alt="TechNova Logo">
+</a>
+
+        </div>
+
+
+        <!-- SIDEBAR MENU -->
+
+        <nav class="sidebar-menu">
+
+            <a
+                href="#dashboard"
+                class="menu-link ">
+
+                <i class="fa-solid fa-chart-line"></i>
+
+                <span>Dashboard</span>
+
+            </a>
+
+
+            <a
+                href="#products"
+                class="menu-link">
+
+                <i class="fa-solid fa-box"></i>
+
+                <span>Products</span>
+
+            </a>
+
+
+            <a
+                href="#orders"
+                class="menu-link">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                <span>Orders</span>
+
+            </a>
+
+
+            <a
+                href="#customers"
+                class="menu-link">
+
+                <i class="fa-solid fa-users"></i>
+
+                <span>Customers</span>
+
+            </a>
+
+
+            <a
+                href="#reports"
+                class="menu-link">
+
+                <i class="fa-solid fa-chart-pie"></i>
+
+                <span>Reports</span>
+
+            </a>
+
+
+            <a
+                href="#settings"
+                class="menu-link">
+
+                <i class="fa-solid fa-gear"></i>
+
+                <span>Settings</span>
+
+            </a>
+
+        </nav>
+
+
+        <!-- LOGOUT -->
+
+        <a
+            href="login.html"
+            class="logout">
+
+            <i class="fa-solid fa-right-from-bracket"></i>
+
+            <span>Logout</span>
+
+        </a>
+
+    </aside>
+
+
+    <!-- =================================
+         MAIN CONTENT
+    ================================== -->
+
+    <main class="main-content">
+
+
+        <!-- =================================
+             TOPBAR
+        ================================== -->
+
+        <header class="topbar">
+
+            <button
+                type="button"
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open menu">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+
+            <div class="page-title">
+
+                <h2>Admin Dashboard</h2>
+
+                <p>
+                    Manage your computer store
+                </p>
+
+            </div>
+
+
+            <div class="admin-profile">
+
+                <button
+                    type="button"
+                    class="notification"
+                    onclick="window.location.href='404.html'"
+                    aria-label="Notifications">
+
+                    <i class="fa-regular fa-bell"></i>
+
+                    <span>3</span>
+
+                </button>
+
+
+                <div class="profile-avatar">
+
+                    <i class="fa-solid fa-user-shield"></i>
+
+                </div>
+
+
+                <div class="profile-text">
+
+                    <strong>Admin</strong>
+
+                    <small id="adminEmail">
+                        admin@gmail.com
+                    </small>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- =================================
+             DASHBOARD
+        ================================== -->
+
+        <section
+            id="dashboard"
+            class="dashboard-section">
+
+
+            <!-- WELCOME -->
+
+            <div class="welcome-banner">
+
+                <div>
+
+                    <span class="banner-tag">
+                        ADMIN PANEL
+                    </span>
+
+                    <h1>
+                        Welcome Back, Admin!
+                    </h1>
+
+                    <p>
+                        Manage products, orders,
+                        customers and store performance.
+                    </p>
+
+                </div>
+
+
+                <div class="banner-icon">
+
+                    <i class="fa-solid fa-laptop-code"></i>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================
+                 STATS
+            ================================== -->
+
+            <div class="stats-grid">
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+
+                        <i class="fa-solid fa-indian-rupee-sign"></i>
+
+                    </div>
+
+                    <div>
+
+                        <p>Total Sales</p>
+
+                        <h3>₹2,48,560</h3>
+
+                        <small>
+                            <i class="fa-solid fa-arrow-up"></i>
+                            18.5% this month
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+
+                        <i class="fa-solid fa-box"></i>
+
+                    </div>
+
+                    <div>
+
+                        <p>Total Products</p>
+
+                        <h3>248</h3>
+
+                        <small>
+                            24 new products
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+
+                        <i class="fa-solid fa-cart-shopping"></i>
+
+                    </div>
+
+                    <div>
+
+                        <p>Total Orders</p>
+
+                        <h3>1,245</h3>
+
+                        <small>
+                            86 pending
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+
+                        <i class="fa-solid fa-users"></i>
+
+                    </div>
+
+                    <div>
+
+                        <p>Customers</p>
+
+                        <h3>3,856</h3>
+
+                        <small>
+                            124 new customers
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================
+                 DASHBOARD GRID
+            ================================== -->
+
+            <div class="dashboard-grid">
+
+
+                <!-- SALES OVERVIEW -->
+
+                <div class="dashboard-card sales-card">
+
+                    <div class="card-header">
+
+                        <div>
+
+                            <h3>
+                                Sales Overview
+                            </h3>
+
+                            <p>
+                                Monthly sales performance
+                            </p>
+
+                        </div>
+
+
+                        <select
+                            id="salesYear"
+                            name="salesYear"
+                            aria-label="Select sales year">
+
+                            <option value="2026" selected>
+                                2026
+                            </option>
+
+                            <option value="2025">
+                                2025
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="chart">
+
+                        <div
+                            class="chart-bar"
+                            style="height:35%;">
+
+                            <span>Jan</span>
+
+                        </div>
+
+
+                        <div
+                            class="chart-bar"
+                            style="height:48%;">
+
+                            <span>Feb</span>
+
+                        </div>
+
+
+                        <div
+                            class="chart-bar"
+                            style="height:42%;">
+
+                            <span>Mar</span>
+
+                        </div>
+
+
+                        <div
+                            class="chart-bar"
+                            style="height:65%;">
+
+                            <span>Apr</span>
+
+                        </div>
+
+
+                        <div
+                            class="chart-bar"
+                            style="height:58%;">
+
+                            <span>May</span>
+
+                        </div>
+
+
+                        <div
+                            class="chart-bar"
+                            style="height:78%;">
+
+                            <span>Jun</span>
+
+                        </div>
+
+
+                        <div
+                            class="chart-bar"
+                            style="height:92%;">
+
+                            <span>Jul</span>
+
+                        </div>
+
+
+                        <div
+                            class="chart-bar"
+                            style="height:82%;">
+
+                            <span>Aug</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- QUICK ACTIONS -->
+
+                <div class="dashboard-card">
+
+                    <div class="card-header">
+
+                        <div>
+
+                            <h3>
+                                Quick Actions
+                            </h3>
+
+                            <p>
+                                Manage store quickly
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="quick-actions">
+
+                        <button
+                            type="button"
+                            onclick="window.location.href='404.html'">
+
+                            <i class="fa-solid fa-plus"></i>
+
+                            <span>Add Product</span>
+
+                        </button>
+
+
+                        <button
+                            type="button"
+                            onclick="window.location.href='404.html'">
+
+                            <i class="fa-solid fa-list"></i>
+
+                            <span>View Orders</span>
+
+                        </button>
+
+
+                        <button
+                            type="button"
+                            onclick="window.location.href='404.html'">
+
+                            <i class="fa-solid fa-user-plus"></i>
+
+                            <span>Add Customer</span>
+
+                        </button>
+
+
+                        <button
+                            type="button"
+                            onclick="window.location.href='404.html'">
+
+                            <i class="fa-solid fa-file-export"></i>
+
+                            <span>Export Report</span>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================
+             PRODUCTS
+        ================================== -->
+
+        <section
+            id="products"
+            class="dashboard-section">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span>STORE INVENTORY</span>
+
+                    <h2>Products</h2>
+
+                </div>
+
+
+                <button
+                    type="button"
+                    class="primary-btn"
+                    onclick="window.location.href='404.html'">
+
+                    <i class="fa-solid fa-plus"></i>
+
+                    Add Product
+
+                </button>
+
+            </div>
+
+
+            <div class="product-grid">
+
+
+                <!-- PRODUCT 1 -->
+
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=700&q=80"
+                            alt="Laptop">
+
+                        <span>NEW</span>
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <small>LAPTOP</small>
+
+                        <h3>
+                            Stackly Pro Laptop
+                        </h3>
+
+                        <p>₹74,999</p>
+
+                        <button
+                            type="button"
+                            onclick="window.location.href='404.html'">
+
+                            Manage Product
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCT 2 -->
+
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1587831990711-23ca6441447b?auto=format&fit=crop&w=700&q=80"
+                            alt="Desktop">
+
+                        <span>PRO</span>
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <small>DESKTOP</small>
+
+                        <h3>
+                            Stackly Gaming PC
+                        </h3>
+
+                        <p>₹1,24,999</p>
+
+                        <button
+                            type="button"
+                            onclick="window.location.href='404.html'">
+
+                            Manage Product
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCT 3 -->
+
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?auto=format&fit=crop&w=700&q=80"
+                            alt="Gaming Computer">
+
+                        <span>RGB</span>
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <small>GAMING</small>
+
+                        <h3>
+                            RGB Gaming Setup
+                        </h3>
+
+                        <p>₹1,89,999</p>
+
+                        <button
+                            type="button"
+                            onclick="window.location.href='404.html'">
+
+                            Manage Product
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCT 4 -->
+
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=700&q=80"
+                            alt="Monitor">
+
+                        <span>SALE</span>
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <small>ACCESSORY</small>
+
+                        <h3>
+                            Ultra HD Monitor
+                        </h3>
+
+                        <p>₹29,999</p>
+
+                        <button
+                            type="button"
+                            onclick="window.location.href='404.html'">
+
+                            Manage Product
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================
+             ORDERS
+        ================================== -->
+
+        <section
+            id="orders"
+            class="dashboard-section">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span>RECENT ACTIVITY</span>
+
+                    <h2>Recent Orders</h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="table-wrapper">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Order ID</th>
+
+                            <th>Customer</th>
+
+                            <th>Product</th>
+
+                            <th>Amount</th>
+
+                            <th>Status</th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>#TN1001</td>
+
+                            <td>Rahul Kumar</td>
+
+                            <td>Gaming Laptop</td>
+
+                            <td>₹89,999</td>
+
+                            <td>
+                                <span class="status delivered">
+                                    Delivered
+                                </span>
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>#TN1002</td>
+
+                            <td>Priya Sharma</td>
+
+                            <td>Wireless Keyboard</td>
+
+                            <td>₹2,499</td>
+
+                            <td>
+                                <span class="status pending">
+                                    Pending
+                                </span>
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>#TN1003</td>
+
+                            <td>Arjun Rao</td>
+
+                            <td>RTX Gaming PC</td>
+
+                            <td>₹1,54,999</td>
+
+                            <td>
+                                <span class="status processing">
+                                    Processing
+                                </span>
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================
+             CUSTOMERS
+        ================================== -->
+
+        <section
+            id="customers"
+            class="dashboard-section">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span>CUSTOMER MANAGEMENT</span>
+
+                    <h2>Customers</h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="customer-grid">
+
+
+                <div class="customer-card">
+
+                    <div class="customer-avatar">
+                        RK
+                    </div>
+
+                    <div>
+
+                        <h3>Rahul Kumar</h3>
+
+                        <p>rahul@gmail.com</p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="customer-card">
+
+                    <div class="customer-avatar">
+                        PS
+                    </div>
+
+                    <div>
+
+                        <h3>Priya Sharma</h3>
+
+                        <p>priya@gmail.com</p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="customer-card">
+
+                    <div class="customer-avatar">
+                        AR
+                    </div>
+
+                    <div>
+
+                        <h3>Arjun Rao</h3>
+
+                        <p>arjun@gmail.com</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================
+             REPORTS
+        ================================== -->
+
+        <section
+            id="reports"
+            class="dashboard-section">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span>BUSINESS ANALYTICS</span>
+
+                    <h2>Reports</h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="report-grid">
+
+
+                <div class="report-card">
+
+                    <i class="fa-solid fa-arrow-trend-up"></i>
+
+                    <h3>24.8%</h3>
+
+                    <p>Sales Growth</p>
+
+                </div>
+
+
+                <div class="report-card">
+
+                    <i class="fa-solid fa-boxes-stacked"></i>
+
+                    <h3>86%</h3>
+
+                    <p>Inventory Usage</p>
+
+                </div>
+
+
+                <div class="report-card">
+
+                    <i class="fa-solid fa-user-check"></i>
+
+                    <h3>92%</h3>
+
+                    <p>Customer Satisfaction</p>
+
+                </div>
+
+
+                <div class="report-card">
+
+                    <i class="fa-solid fa-cart-shopping"></i>
+
+                    <h3>1,245</h3>
+
+                    <p>Monthly Orders</p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================
+             SETTINGS
+        ================================== -->
+
+        <section
+            id="settings"
+            class="dashboard-section">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span>SYSTEM</span>
+
+                    <h2>Settings</h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="settings-card">
+
+
+                <div class="setting-row">
+
+                    <div>
+
+                        <h3>
+                            Store Notifications
+                        </h3>
+
+                        <p>
+                            Receive notifications
+                            about new orders.
+                        </p>
+
+                    </div>
+
+<label class="switch">
+
+    <input
+        type="checkbox"
+        aria-label="Toggle setting">
+
+    <span class="slider"></span>
+
+</label>
+
+                </div>
+
+
+                <div class="setting-row">
+
+                    <div>
+
+                        <h3>
+                            Email Reports
+                        </h3>
+
+                        <p>
+                            Receive weekly sales reports.
+                        </p>
+
+                    </div>
+
+<label class="switch">
+
+    <input
+        type="checkbox"
+        aria-label="Toggle setting">
+
+    <span class="slider"></span>
+
+</label>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================
+             FOOTER
+        ================================== -->
+
+        <footer>
+
+            <p>
+                © 2026 Stackly Computer Store.
+                Admin Dashboard.
+            </p>
+
+        </footer>
+
+    </main>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="js/admin.js"></script>
+
+</body>
+
+</html>

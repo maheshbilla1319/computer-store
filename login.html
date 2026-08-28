@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Login</title>
+
+
+    <!-- FONT AWESOME -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+    <!-- LOGIN CSS -->
+
+    <link
+        rel="stylesheet"
+        href="css/login.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ==============================
+         BACKGROUND ICONS
+    =============================== -->
+
+    <div class="background-icons">
+
+        <i class="fa-solid fa-user-shield icon icon1"></i>
+
+        <i class="fa-solid fa-user icon icon2"></i>
+
+        <i class="fa-solid fa-envelope icon icon3"></i>
+
+        <i class="fa-solid fa-lock icon icon4"></i>
+
+        <i class="fa-solid fa-laptop icon icon5"></i>
+
+        <i class="fa-solid fa-shield-halved icon icon6"></i>
+
+        <i class="fa-solid fa-cloud icon icon7"></i>
+
+        <i class="fa-solid fa-key icon icon8"></i>
+
+    </div>
+
+
+
+    <!-- ==============================
+         LOGIN WRAPPER
+    =============================== -->
+
+    <div class="login-wrapper">
+
+
+        <div class="login-card">
+
+
+            <!-- ==========================
+                 LOGO
+            =========================== -->
+
+         <!-- LOGO -->
+<div class="login-logo">
+    <img 
+        src="css/assets/image-12.webp" 
+        alt="Logo"
+    >
+</div>
+
+
+            <!-- ==========================
+                 TITLE
+            =========================== -->
+
+            <h1>
+                Welcome Back
+            </h1>
+
+
+            <p class="subtitle">
+
+                Login to continue to your account
+
+            </p>
+
+
+
+            <!-- ==========================
+                 LOGIN FORM
+            =========================== -->
+
+            <form id="loginForm">
+
+
+                <!-- ==========================
+                     ROLE
+                =========================== -->
+
+                <div class="input-group">
+
+                    <label>
+                        Select Role
+                    </label>
+
+
+                    <div class="role-container">
+
+
+                        <!-- ADMIN -->
+
+                        <label class="role-card">
+
+                            <input
+                                type="radio"
+                                name="role"
+                                value="Admin">
+
+                            <span>
+
+                                <i class="fa-solid fa-user-shield"></i>
+
+                                Admin
+
+                            </span>
+
+                        </label>
+
+
+
+                        <!-- CUSTOMER -->
+
+                        <label class="role-card">
+
+                            <input
+                                type="radio"
+                                name="role"
+                                value="Customer">
+
+                            <span>
+
+                                <i class="fa-solid fa-user"></i>
+
+                                Customer
+
+                            </span>
+
+                        </label>
+
+
+                    </div>
+
+
+                    <small
+                        class="error"
+                        id="roleError">
+                    </small>
+
+                </div>
+
+
+
+                <!-- ==========================
+                     EMAIL
+                =========================== -->
+
+                <div class="input-group">
+
+                    <label for="email">
+
+                        Gmail / Email
+
+                    </label>
+
+
+                    <div class="input-box">
+
+                        <i class="fa-solid fa-envelope"></i>
+
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Enter your Gmail"
+                            autocomplete="email">
+
+
+                    </div>
+
+
+                    <small
+                        class="error"
+                        id="emailError">
+                    </small>
+
+                </div>
+
+
+<!-- ==========================
+     PASSWORD
+=========================== -->
+
+<div class="input-group">
+
+    <label for="password">
+        Password
+    </label>
+
+    <div class="input-box">
+
+        <i class="fa-solid fa-lock"></i>
+
+        <input 
+            type="password" 
+            id="password" 
+            placeholder="Enter your password"
+            autocomplete="current-password">
+
+        <!-- SHOW / HIDE PASSWORD -->
+
+        <button 
+            type="button"
+            class="toggle-password"
+            id="togglePassword"
+            aria-label="Show password">
+
+            <i class="fa-solid fa-eye"></i>
+
+        </button>
+
+    </div>
+
+
+    <!-- FORGOT PASSWORD -->
+
+    <div class="password-options">
+
+        <a 
+            href="404.html"
+            class="forgot-password">
+
+            Forgot Password?
+
+        </a>
+
+    </div>
+
+
+    <small 
+        class="error"
+        id="passwordError">
+    </small>
+
+</div>
+
+
+                <!-- ==========================
+                     LOGIN BUTTON
+                =========================== -->
+
+                <button
+                    type="submit"
+                    class="login-btn">
+
+                    <span>
+                        Login
+                    </span>
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+
+            </form>
+
+
+
+            <!-- ==========================
+                 SIGNUP
+            =========================== -->
+
+            <div class="signup-link">
+
+                Don't have an account?
+
+                <a href="signup.html">
+
+                    Create Account
+
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ==============================
+         SCROLL TO TOP BUTTON
+    =============================== -->
+
+    <button
+        type="button"
+        id="scrollTopBtn"
+        class="scroll-top-btn"
+        aria-label="Scroll to top">
+
+        <i class="fa-solid fa-arrow-up"></i>
+
+    </button>
+
+
+
+    <!-- ==============================
+         LOGIN JAVASCRIPT
+    =============================== -->
+
+    <script src="js/login.js"></script>
+
+
+</body>
+
+</html>
